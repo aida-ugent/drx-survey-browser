@@ -1,0 +1,41 @@
+{
+  "abbreviation": "ClusterShapley",
+  "title": "Explaining dimensionality reduction results using Shapley values",
+  "authors": "Marcílio-Jr, Wilson E.; Eler, Danilo M.",
+  "year": 2021,
+  "url": "https://www.sciencedirect.com/science/article/pii/S0957417421004619",
+  "github": "https://github.com/wilsonjr/ClusterShapley",
+  "task": [
+    "Characterize"
+  ],
+  "target": [
+    "Cluster"
+  ],
+  "drRequirements": [
+    "DR-Agnostic"
+  ],
+  "inputData": [
+    "Numeric"
+  ],
+  "outputFormat": [
+    "FI: Model-Derived (SHAP)"
+  ],
+  "outputComplexity": [
+    "Cutoff"
+  ],
+  "interactive": [
+    "Interactive"
+  ],
+  "layoutEnrichment": [
+    "None"
+  ],
+  "evaluationType": [],
+  "quantitativeMeasures": [],
+  "inputDataCategories": [
+    "Numeric"
+  ],
+  "outputFormatCategories": [
+    "FI: Model-Derived"
+  ],
+  "slug": "clustershapley"
+}

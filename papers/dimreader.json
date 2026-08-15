@@ -1,0 +1,41 @@
+{
+  "abbreviation": "DimReader",
+  "title": "DimReader: Axis lines that explain non-linear projections",
+  "authors": "Faust, Rebecca; Glickenstein, David; Scheidegger, Carlos",
+  "year": 2019,
+  "url": "https://doi.org/10.1109/TVCG.2018.2865194",
+  "github": "https://github.com/rjfaust/DimReader",
+  "task": [
+    "Probe HD to LD"
+  ],
+  "target": [
+    "Global"
+  ],
+  "drRequirements": [
+    "Auto Diff."
+  ],
+  "inputData": [
+    "Numeric"
+  ],
+  "outputFormat": [
+    "LD Geometric"
+  ],
+  "outputComplexity": [
+    "No Scalability Control"
+  ],
+  "interactive": [
+    "Interactive"
+  ],
+  "layoutEnrichment": [
+    "Spatial"
+  ],
+  "evaluationType": [],
+  "quantitativeMeasures": [],
+  "inputDataCategories": [
+    "Numeric"
+  ],
+  "outputFormatCategories": [
+    "LD Geometric"
+  ],
+  "slug": "dimreader"
+}

@@ -1,0 +1,46 @@
+{
+  "abbreviation": "t-viSNE",
+  "title": "T-viSNE: Interactive Assessment and Interpretation of t-SNE Projections",
+  "authors": "Chatzimparmpas, Angelos; Martins, Rafael M; Kerren, Andreas",
+  "year": 2020,
+  "url": "https://ieeexplore.ieee.org/document/9064929",
+  "github": "https://github.com/angeloschatzimparmpas/t-viSNE",
+  "task": [
+    "Characterize"
+  ],
+  "target": [
+    "Trajectory"
+  ],
+  "drRequirements": [
+    "t-SNE"
+  ],
+  "inputData": [
+    "Numeric"
+  ],
+  "outputFormat": [
+    "FI: Statistics (Correlation)"
+  ],
+  "outputComplexity": [
+    "Cutoff"
+  ],
+  "interactive": [
+    "Interactive"
+  ],
+  "layoutEnrichment": [
+    "None"
+  ],
+  "evaluationType": [
+    "Lab Study"
+  ],
+  "quantitativeMeasures": [
+    "Task Time",
+    "Satisfaction"
+  ],
+  "inputDataCategories": [
+    "Numeric"
+  ],
+  "outputFormatCategories": [
+    "FI: Statistics"
+  ],
+  "slug": "t-visne"
+}

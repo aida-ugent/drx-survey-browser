@@ -1,0 +1,1814 @@
+[
+  {
+    "abbreviation": "DCE",
+    "title": "\"Why Here and Not There?\" -- Diverse Contrasting Explanations of Dimensionality Reduction",
+    "authors": "Artelt, André; Schulz, Alexander; Hammer, Barbara",
+    "year": 2023,
+    "url": "https://doi.org/10.5220/0011618300003411",
+    "github": "https://github.com/andreArtelt/ContrastingExplanationDimRed",
+    "task": [
+      "Probe LD to HD"
+    ],
+    "target": [
+      "Point"
+    ],
+    "drRequirements": [
+      "Parametric"
+    ],
+    "inputData": [
+      "Numeric"
+    ],
+    "outputFormat": [
+      "HD Feature Change"
+    ],
+    "outputComplexity": [
+      "Sparsity"
+    ],
+    "interactive": [
+      "Static"
+    ],
+    "layoutEnrichment": [
+      "None"
+    ],
+    "evaluationType": [
+      "Quantitative"
+    ],
+    "quantitativeMeasures": [
+      "Fidelity",
+      "Complexity",
+      "Diversity"
+    ],
+    "inputDataCategories": [
+      "Numeric"
+    ],
+    "outputFormatCategories": [
+      "HD Feature Change"
+    ],
+    "slug": "dce"
+  },
+  {
+    "abbreviation": "PIE",
+    "title": "A Computational Approach to Interpreting the Embedding Space of Dimension Reduction",
+    "authors": "Zhang, Bingyuan; Uno, Kohei; Kodama, Hayata; Himori, Koichi; Matsui, Yusuke",
+    "year": 2024,
+    "url": "https://www.biorxiv.org/content/10.1101/2024.06.23.600292",
+    "github": null,
+    "task": [
+      "Characterize"
+    ],
+    "target": [
+      "Global"
+    ],
+    "drRequirements": [
+      "DR-Agnostic"
+    ],
+    "inputData": [
+      "Specific: scRNA-seq"
+    ],
+    "outputFormat": [
+      "LD Geometric"
+    ],
+    "outputComplexity": [
+      "Cutoff"
+    ],
+    "interactive": [
+      "Static"
+    ],
+    "layoutEnrichment": [
+      "Direct"
+    ],
+    "evaluationType": [
+      "Quantitative"
+    ],
+    "quantitativeMeasures": [
+      "Robustness",
+      "Fidelity"
+    ],
+    "inputDataCategories": [
+      "Specific"
+    ],
+    "outputFormatCategories": [
+      "LD Geometric"
+    ],
+    "slug": "pie"
+  },
+  {
+    "abbreviation": "ManifoldLasso",
+    "title": "A regression approach for explaining manifold embedding coordinates",
+    "authors": "Meila, Marina; Koelle, Samson J.; Zhang, Hanyu",
+    "year": 2018,
+    "url": "https://arxiv.org/abs/1811.11891",
+    "github": null,
+    "task": [
+      "Characterize"
+    ],
+    "target": [
+      "Global"
+    ],
+    "drRequirements": [
+      "Smooth Embedding"
+    ],
+    "inputData": [
+      "Numeric"
+    ],
+    "outputFormat": [
+      "FI: Model-Derived (LR)"
+    ],
+    "outputComplexity": [
+      "Sparsity"
+    ],
+    "interactive": [
+      "Static"
+    ],
+    "layoutEnrichment": [
+      "None"
+    ],
+    "evaluationType": [],
+    "quantitativeMeasures": [],
+    "inputDataCategories": [
+      "Numeric"
+    ],
+    "outputFormatCategories": [
+      "FI: Model-Derived"
+    ],
+    "slug": "manifoldlasso"
+  },
+  {
+    "abbreviation": "Forward and Backward Projection",
+    "title": "A visual interaction framework for dimensionality reduction based data exploration",
+    "authors": "Cavallo, Marco; Demiralp, Çaǧatay",
+    "year": 2018,
+    "url": "https://doi.org/10.1145/3173574.3174209",
+    "github": null,
+    "task": [
+      "Probe HD to LD",
+      "Probe LD to HD"
+    ],
+    "target": [
+      "Point"
+    ],
+    "drRequirements": [
+      "OOS",
+      "Inverse"
+    ],
+    "inputData": [
+      "Numeric"
+    ],
+    "outputFormat": [
+      "LD Geometric",
+      "HD Feature Change"
+    ],
+    "outputComplexity": [
+      "Cutoff"
+    ],
+    "interactive": [
+      "Interactive"
+    ],
+    "layoutEnrichment": [
+      "Direct",
+      "Spatial"
+    ],
+    "evaluationType": [
+      "Quantitative"
+    ],
+    "quantitativeMeasures": [
+      "Fidelity"
+    ],
+    "inputDataCategories": [
+      "Numeric"
+    ],
+    "outputFormatCategories": [
+      "LD Geometric",
+      "HD Feature Change"
+    ],
+    "slug": "forward-and-backward-projection"
+  },
+  {
+    "abbreviation": "BIOT",
+    "title": "BIOT: Explaining multidimensional nonlinear MDS embeddings using the Best Interpretable Orthogonal Transformation",
+    "authors": "Bibal, Adrien; Marion, Rebecca; von Sachs, Rainer; Frénay, Benoît",
+    "year": 2021,
+    "url": "https://doi.org/10.1016/j.neucom.2021.04.088",
+    "github": "https://github.com/rebeccamarion/BIOT",
+    "task": [
+      "Characterize"
+    ],
+    "target": [
+      "Global"
+    ],
+    "drRequirements": [
+      "Rotation Invariant"
+    ],
+    "inputData": [
+      "Numeric"
+    ],
+    "outputFormat": [
+      "FI: Model-Derived (LR)",
+      "LD Geometric"
+    ],
+    "outputComplexity": [
+      "Sparsity"
+    ],
+    "interactive": [
+      "Static"
+    ],
+    "layoutEnrichment": [
+      "None"
+    ],
+    "evaluationType": [
+      "Quantitative",
+      "Informal Feedback"
+    ],
+    "quantitativeMeasures": [
+      "Fidelity",
+      "Complexity"
+    ],
+    "inputDataCategories": [
+      "Numeric"
+    ],
+    "outputFormatCategories": [
+      "FI: Model-Derived",
+      "LD Geometric"
+    ],
+    "slug": "biot"
+  },
+  {
+    "abbreviation": "cExpression",
+    "title": "Contrastive analysis for scatterplot-based representations of dimensionality reduction",
+    "authors": "Marcílio-Jr, Wilson E.; Eler, Danilo M.; Garcia, Rogério E.",
+    "year": 2021,
+    "url": "https://www.sciencedirect.com/science/article/pii/S0097849321001783",
+    "github": null,
+    "task": [
+      "Discriminate (Complement)"
+    ],
+    "target": [
+      "Cluster"
+    ],
+    "drRequirements": [
+      "DR-Agnostic"
+    ],
+    "inputData": [
+      "Numeric"
+    ],
+    "outputFormat": [
+      "FI: Statistics (t-Test)"
+    ],
+    "outputComplexity": [
+      "Cutoff"
+    ],
+    "interactive": [
+      "Interactive"
+    ],
+    "layoutEnrichment": [
+      "Spatial"
+    ],
+    "evaluationType": [
+      "Quantitative"
+    ],
+    "quantitativeMeasures": [
+      "Fidelity"
+    ],
+    "inputDataCategories": [
+      "Numeric"
+    ],
+    "outputFormatCategories": [
+      "FI: Statistics"
+    ],
+    "slug": "cexpression"
+  },
+  {
+    "abbreviation": "DimBridge",
+    "title": "DimBridge: Interactive Explanation of Visual Patterns in Dimensionality Reductions with Predicate Logic",
+    "authors": "Montambault, Brian; Appleby, Gabriel; Rogers, Jen; Brumar, Camelia D.; Li, Mingwei; Chang, Remco",
+    "year": 2025,
+    "url": "https://doi.org/10.1109/TVCG.2024.3456391",
+    "github": "https://github.com/jrogerthat/DimBridge-App/tree/master",
+    "task": [
+      "Discriminate (Explicit)",
+      "Discriminate (Complement)"
+    ],
+    "target": [
+      "Cluster",
+      "Trajectory"
+    ],
+    "drRequirements": [
+      "DR-Agnostic"
+    ],
+    "inputData": [
+      "Numeric"
+    ],
+    "outputFormat": [
+      "Trees or Rules",
+      "FI: Model-Derived (Predicate Regression)"
+    ],
+    "outputComplexity": [
+      "Sparsity"
+    ],
+    "interactive": [
+      "Interactive"
+    ],
+    "layoutEnrichment": [
+      "None"
+    ],
+    "evaluationType": [
+      "Informal Feedback"
+    ],
+    "quantitativeMeasures": [],
+    "inputDataCategories": [
+      "Numeric"
+    ],
+    "outputFormatCategories": [
+      "Trees or Rules",
+      "FI: Model-Derived"
+    ],
+    "slug": "dimbridge"
+  },
+  {
+    "abbreviation": "DimReader",
+    "title": "DimReader: Axis lines that explain non-linear projections",
+    "authors": "Faust, Rebecca; Glickenstein, David; Scheidegger, Carlos",
+    "year": 2019,
+    "url": "https://doi.org/10.1109/TVCG.2018.2865194",
+    "github": "https://github.com/rjfaust/DimReader",
+    "task": [
+      "Probe HD to LD"
+    ],
+    "target": [
+      "Global"
+    ],
+    "drRequirements": [
+      "Auto Diff."
+    ],
+    "inputData": [
+      "Numeric"
+    ],
+    "outputFormat": [
+      "LD Geometric"
+    ],
+    "outputComplexity": [
+      "No Scalability Control"
+    ],
+    "interactive": [
+      "Interactive"
+    ],
+    "layoutEnrichment": [
+      "Spatial"
+    ],
+    "evaluationType": [],
+    "quantitativeMeasures": [],
+    "inputDataCategories": [
+      "Numeric"
+    ],
+    "outputFormatCategories": [
+      "LD Geometric"
+    ],
+    "slug": "dimreader"
+  },
+  {
+    "abbreviation": "DimVis",
+    "title": "DimVis: Interpreting Visual Clusters in Dimensionality Reduction With Explainable Boosting Machine",
+    "authors": "Salmanian, Parisa; Chatzimparmpas, Angelos; Karaca, Ali Can; Martins, Rafael M.",
+    "year": 2024,
+    "url": "http://arxiv.org/abs/2402.06885",
+    "github": "https://github.com/parisa-salmanian/DimVis",
+    "task": [
+      "Discriminate (Complement)"
+    ],
+    "target": [
+      "Cluster"
+    ],
+    "drRequirements": [
+      "DR-Agnostic"
+    ],
+    "inputData": [
+      "Numeric"
+    ],
+    "outputFormat": [
+      "FI: Model-Derived (EBM)"
+    ],
+    "outputComplexity": [
+      "Cutoff"
+    ],
+    "interactive": [
+      "Interactive"
+    ],
+    "layoutEnrichment": [
+      "None"
+    ],
+    "evaluationType": [
+      "Quantitative"
+    ],
+    "quantitativeMeasures": [
+      "Fidelity"
+    ],
+    "inputDataCategories": [
+      "Numeric"
+    ],
+    "outputFormatCategories": [
+      "FI: Model-Derived"
+    ],
+    "slug": "dimvis"
+  },
+  {
+    "abbreviation": "Explain-and-Test",
+    "title": "Explain-and-Test: An Interactive Machine Learning Framework for Exploring Text Embeddings",
+    "authors": "Raval, Shivam; Wang, Carolyn; Viégas, Fernanda B.; Wattenberg, Martin",
+    "year": 2023,
+    "url": "https://doi.org/10.1109/VIS54172.2023.00052",
+    "github": "https://github.com/shivam-raval96/TextCluster-Explainer",
+    "task": [
+      "Discriminate (Complement)"
+    ],
+    "target": [
+      "Cluster"
+    ],
+    "drRequirements": [
+      "OOS"
+    ],
+    "inputData": [
+      "Textual"
+    ],
+    "outputFormat": [
+      "FI: Model-Derived (SVM)",
+      "Natural Language"
+    ],
+    "outputComplexity": [
+      "Cutoff"
+    ],
+    "interactive": [
+      "Interactive"
+    ],
+    "layoutEnrichment": [
+      "Direct",
+      "Cluster"
+    ],
+    "evaluationType": [],
+    "quantitativeMeasures": [],
+    "inputDataCategories": [
+      "Textual"
+    ],
+    "outputFormatCategories": [
+      "FI: Model-Derived",
+      "Natural Language"
+    ],
+    "slug": "explain-and-test"
+  },
+  {
+    "abbreviation": "DTALE",
+    "title": "Explainable nucleus classification using Decision Tree Approximation of Learned Embeddings",
+    "authors": "Amgad, Mohamed; Atteya, Lamees A.; Hussein, Hagar; Mohammed, Kareem Hosny; Hafiz, Ehab; Elsebaie, Maha A. T.; Mobadersany, Pooya; Manthey, David; Gutman, David A.; Elfandy, Habiba; Cooper, Lee A. D.",
+    "year": 2022,
+    "url": "https://doi.org/10.1093/bioinformatics/btab670",
+    "github": "https://github.com/CancerDataScience/NuCLS",
+    "task": [
+      "Characterize"
+    ],
+    "target": [
+      "Global"
+    ],
+    "drRequirements": [
+      "DR-Agnostic"
+    ],
+    "inputData": [
+      "Specific: Histopathology Images"
+    ],
+    "outputFormat": [
+      "Trees or Rules"
+    ],
+    "outputComplexity": [
+      "Sparsity"
+    ],
+    "interactive": [
+      "Static"
+    ],
+    "layoutEnrichment": [
+      "Direct"
+    ],
+    "evaluationType": [
+      "Quantitative"
+    ],
+    "quantitativeMeasures": [
+      "Fidelity"
+    ],
+    "inputDataCategories": [
+      "Specific"
+    ],
+    "outputFormatCategories": [
+      "Trees or Rules"
+    ],
+    "slug": "dtale"
+  },
+  {
+    "abbreviation": "ClusterShapley",
+    "title": "Explaining dimensionality reduction results using Shapley values",
+    "authors": "Marcílio-Jr, Wilson E.; Eler, Danilo M.",
+    "year": 2021,
+    "url": "https://www.sciencedirect.com/science/article/pii/S0957417421004619",
+    "github": "https://github.com/wilsonjr/ClusterShapley",
+    "task": [
+      "Characterize"
+    ],
+    "target": [
+      "Cluster"
+    ],
+    "drRequirements": [
+      "DR-Agnostic"
+    ],
+    "inputData": [
+      "Numeric"
+    ],
+    "outputFormat": [
+      "FI: Model-Derived (SHAP)"
+    ],
+    "outputComplexity": [
+      "Cutoff"
+    ],
+    "interactive": [
+      "Interactive"
+    ],
+    "layoutEnrichment": [
+      "None"
+    ],
+    "evaluationType": [],
+    "quantitativeMeasures": [],
+    "inputDataCategories": [
+      "Numeric"
+    ],
+    "outputFormatCategories": [
+      "FI: Model-Derived"
+    ],
+    "slug": "clustershapley"
+  },
+  {
+    "abbreviation": "GCE",
+    "title": "Explaining Groups of Points in Low-Dimensional Representations",
+    "authors": "Plumb, Gregory; Terhorst, Jonathan; Sankararaman, Sriram; Talwalkar, Ameet",
+    "year": 2020,
+    "url": "http://proceedings.mlr.press/v119/plumb20a.html",
+    "github": "https://github.com/GDPlumb/ELDR",
+    "task": [
+      "Probe LD to HD"
+    ],
+    "target": [
+      "Cluster"
+    ],
+    "drRequirements": [
+      "Differentiable"
+    ],
+    "inputData": [
+      "Numeric"
+    ],
+    "outputFormat": [
+      "HD Feature Change"
+    ],
+    "outputComplexity": [
+      "Sparsity"
+    ],
+    "interactive": [
+      "Static"
+    ],
+    "layoutEnrichment": [
+      "None"
+    ],
+    "evaluationType": [
+      "Quantitative"
+    ],
+    "quantitativeMeasures": [
+      "Fidelity",
+      "Complexity",
+      "Robustness"
+    ],
+    "inputDataCategories": [
+      "Numeric"
+    ],
+    "outputFormatCategories": [
+      "HD Feature Change"
+    ],
+    "slug": "gce"
+  },
+  {
+    "abbreviation": "LocalLIME",
+    "title": "Explaining t-SNE embeddings locally by adapting LIME",
+    "authors": "Bibal, Adrien; Vu, Viet Minh; Nanfack, Geraldin; Frenay, Benoit",
+    "year": 2020,
+    "url": "https://www.esann.org/sites/default/files/proceedings/2020/ES2020-105.pdf",
+    "github": null,
+    "task": [
+      "Characterize"
+    ],
+    "target": [
+      "Point"
+    ],
+    "drRequirements": [
+      "t-SNE"
+    ],
+    "inputData": [
+      "Numeric"
+    ],
+    "outputFormat": [
+      "LD Geometric",
+      "FI: Model-Derived (LR)"
+    ],
+    "outputComplexity": [
+      "Sparsity"
+    ],
+    "interactive": [
+      "Static"
+    ],
+    "layoutEnrichment": [
+      "Direct"
+    ],
+    "evaluationType": [],
+    "quantitativeMeasures": [],
+    "inputDataCategories": [
+      "Numeric"
+    ],
+    "outputFormatCategories": [
+      "LD Geometric",
+      "FI: Model-Derived"
+    ],
+    "slug": "locallime"
+  },
+  {
+    "abbreviation": "3D Biplots",
+    "title": "Explaining three-dimensional dimensionality reduction plots",
+    "authors": "Coimbra, Danilo B.; Martins, Rafael M.; Neves, Tácito T.A.T.; Telea, Alexandru C.; Paulovich, Fernando V.",
+    "year": 2016,
+    "url": "https://doi.org/10.1177/1473871615600010",
+    "github": null,
+    "task": [
+      "Characterize"
+    ],
+    "target": [
+      "Global"
+    ],
+    "drRequirements": [
+      "OOS"
+    ],
+    "inputData": [
+      "Numeric"
+    ],
+    "outputFormat": [
+      "FI: Statistics (Variance)",
+      "LD Geometric"
+    ],
+    "outputComplexity": [
+      "No Scalability Control"
+    ],
+    "interactive": [
+      "Interactive"
+    ],
+    "layoutEnrichment": [
+      "Direct"
+    ],
+    "evaluationType": [],
+    "quantitativeMeasures": [],
+    "inputDataCategories": [
+      "Numeric"
+    ],
+    "outputFormatCategories": [
+      "FI: Statistics",
+      "LD Geometric"
+    ],
+    "slug": "3d-biplots"
+  },
+  {
+    "abbreviation": "LXDR",
+    "title": "Exploring local interpretability in dimensionality reduction: Analysis and use cases",
+    "authors": "Mylonas, Nikolaos; Mollas, Ioannis; Bassiliades, Nick; Tsoumakas, Grigorios",
+    "year": 2024,
+    "url": "https://linkinghub.elsevier.com/retrieve/pii/S0957417424009400",
+    "github": "https://github.com/intelligence-csd-auth-gr/Interpretable-Unsupervised-Learning",
+    "task": [
+      "Characterize"
+    ],
+    "target": [
+      "Point"
+    ],
+    "drRequirements": [
+      "OOS"
+    ],
+    "inputData": [
+      "Numeric"
+    ],
+    "outputFormat": [
+      "FI: Model-Derived (LR, NN)"
+    ],
+    "outputComplexity": [
+      "Cutoff"
+    ],
+    "interactive": [
+      "Static"
+    ],
+    "layoutEnrichment": [
+      "None"
+    ],
+    "evaluationType": [
+      "Quantitative"
+    ],
+    "quantitativeMeasures": [
+      "Fidelity"
+    ],
+    "inputDataCategories": [
+      "Numeric"
+    ],
+    "outputFormatCategories": [
+      "FI: Model-Derived"
+    ],
+    "slug": "lxdr"
+  },
+  {
+    "abbreviation": "FeatureClock",
+    "title": "Feature Clock: High-Dimensional Effects in Two-Dimensional Plots",
+    "authors": "Ovcharenko, Olga; Sevastjanova, Rita; Boeva, Valentina",
+    "year": 2024,
+    "url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10771082",
+    "github": "https://github.com/OlgaOvcharenko/feature_clock_visualization",
+    "task": [
+      "Discriminate (Explicit)",
+      "Characterize"
+    ],
+    "target": [
+      "Cluster",
+      "Global"
+    ],
+    "drRequirements": [
+      "DR-Agnostic"
+    ],
+    "inputData": [
+      "Numeric"
+    ],
+    "outputFormat": [
+      "FI: Model-Derived (LR)",
+      "LD Geometric"
+    ],
+    "outputComplexity": [
+      "Cutoff"
+    ],
+    "interactive": [
+      "Static"
+    ],
+    "layoutEnrichment": [
+      "Direct"
+    ],
+    "evaluationType": [
+      "Informal Feedback"
+    ],
+    "quantitativeMeasures": [],
+    "inputDataCategories": [
+      "Numeric"
+    ],
+    "outputFormatCategories": [
+      "FI: Model-Derived",
+      "LD Geometric"
+    ],
+    "slug": "featureclock"
+  },
+  {
+    "abbreviation": "Globally Local Explanations",
+    "title": "Globally local and fast explanations of t-SNE-like nonlinear embeddings",
+    "authors": "Lambert, Pierre; De Bodt, Cyril; Marion, Rebecca; Albert, Julien; Jean, Emmanuel; Corbugy, Sacha",
+    "year": 2022,
+    "url": "https://ceur-ws.org/Vol-3318/short23.pdf",
+    "github": "https://github.com/PierreLambert3/glocally_explained",
+    "task": [
+      "Characterize"
+    ],
+    "target": [
+      "Cluster"
+    ],
+    "drRequirements": [
+      "DR-Agnostic"
+    ],
+    "inputData": [
+      "Numeric"
+    ],
+    "outputFormat": [
+      "Clustering",
+      "LD Geometric",
+      "FI: Model-Derived (LR)"
+    ],
+    "outputComplexity": [
+      "Sparsity"
+    ],
+    "interactive": [
+      "Interactive"
+    ],
+    "layoutEnrichment": [
+      "Cluster"
+    ],
+    "evaluationType": [],
+    "quantitativeMeasures": [],
+    "inputDataCategories": [
+      "Numeric"
+    ],
+    "outputFormatCategories": [
+      "Clustering",
+      "LD Geometric",
+      "FI: Model-Derived"
+    ],
+    "slug": "globally-local-explanations"
+  },
+  {
+    "abbreviation": "t-SNE Gradients",
+    "title": "Gradient-based explanation for non-linear non-parametric dimensionality reduction",
+    "authors": "Corbugy, Sacha; Marion, Rebecca; Frénay, Benoît",
+    "year": 2024,
+    "url": "https://doi.org/10.1007/s10618-024-01055-6",
+    "github": "https://github.com/sady410/tsne_gradients_explanation",
+    "task": [
+      "Probe HD to LD"
+    ],
+    "target": [
+      "Global"
+    ],
+    "drRequirements": [
+      "t-SNE"
+    ],
+    "inputData": [
+      "Numeric"
+    ],
+    "outputFormat": [
+      "LD Geometric",
+      "FI: Model-Derived (DR Gradients)"
+    ],
+    "outputComplexity": [
+      "No Scalability Control"
+    ],
+    "interactive": [
+      "Static"
+    ],
+    "layoutEnrichment": [
+      "Spatial",
+      "Direct"
+    ],
+    "evaluationType": [],
+    "quantitativeMeasures": [],
+    "inputDataCategories": [
+      "Numeric"
+    ],
+    "outputFormatCategories": [
+      "LD Geometric",
+      "FI: Model-Derived"
+    ],
+    "slug": "t-sne-gradients"
+  },
+  {
+    "abbreviation": "iHELP",
+    "title": "iHELP: interactive hierarchical linear projections for interpreting non-linear projections",
+    "authors": "Zeng, Xingchen; Zhou, Haowen; Li, Zhicong; Zhang, Chenqi; Lin, Juncong; Xia, Jiazhi; Yang, Yanyi; Kui, Xiaoyan",
+    "year": 2022,
+    "url": "https://link.springer.com/10.1007/s12650-022-00900-4",
+    "github": null,
+    "task": [
+      "Characterize"
+    ],
+    "target": [
+      "Trajectory"
+    ],
+    "drRequirements": [
+      "DR-Agnostic"
+    ],
+    "inputData": [
+      "Numeric"
+    ],
+    "outputFormat": [
+      "Clustering",
+      "LD Geometric",
+      "FI: Statistics (Correlation)"
+    ],
+    "outputComplexity": [
+      "Aggregation"
+    ],
+    "interactive": [
+      "Interactive"
+    ],
+    "layoutEnrichment": [
+      "None"
+    ],
+    "evaluationType": [
+      "Informal Feedback",
+      "Quantitative"
+    ],
+    "quantitativeMeasures": [
+      "Fidelity"
+    ],
+    "inputDataCategories": [
+      "Numeric"
+    ],
+    "outputFormatCategories": [
+      "Clustering",
+      "LD Geometric",
+      "FI: Statistics"
+    ],
+    "slug": "ihelp"
+  },
+  {
+    "abbreviation": "InfoClus",
+    "title": "InfoClus: Informative Clustering of High-dimensional Data Embeddings",
+    "authors": "Lai, Fuyin; Heiter, Edith; Bied, Guillaume; Lijffijt, Jefrey",
+    "year": 2025,
+    "url": "https://link.springer.com/chapter/10.1007/978-3-032-05962-8_28",
+    "github": "https://github.com/aida-ugent/InfoClus",
+    "task": [
+      "Discriminate (Data)"
+    ],
+    "target": [
+      "Cluster"
+    ],
+    "drRequirements": [
+      "DR-Agnostic"
+    ],
+    "inputData": [
+      "Numeric",
+      "Categorical or Mixed"
+    ],
+    "outputFormat": [
+      "Clustering",
+      "FI: Statistics (KL-Divergence)"
+    ],
+    "outputComplexity": [
+      "Sparsity"
+    ],
+    "interactive": [
+      "Static"
+    ],
+    "layoutEnrichment": [
+      "None"
+    ],
+    "evaluationType": [
+      "Quantitative"
+    ],
+    "quantitativeMeasures": [
+      "Complexity"
+    ],
+    "inputDataCategories": [
+      "Numeric",
+      "Categorical or Mixed"
+    ],
+    "outputFormatCategories": [
+      "Clustering",
+      "FI: Statistics"
+    ],
+    "slug": "infoclus"
+  },
+  {
+    "abbreviation": "ProjectionExplorer",
+    "title": "Interactive tools for explaining multidimensional projections for high-dimensional tabular data",
+    "authors": "Thijssen, Julian; Tian, Zonglin; Telea, Alexandru",
+    "year": 2024,
+    "url": "https://linkinghub.elsevier.com/retrieve/pii/S0097849324001225",
+    "github": "https://github.com/JulianThijssen/ProjectionExplorer",
+    "task": [
+      "Characterize"
+    ],
+    "target": [
+      "Point"
+    ],
+    "drRequirements": [
+      "DR-Agnostic"
+    ],
+    "inputData": [
+      "Numeric"
+    ],
+    "outputFormat": [
+      "FI: Statistics (Variance)"
+    ],
+    "outputComplexity": [
+      "Cutoff"
+    ],
+    "interactive": [
+      "Interactive"
+    ],
+    "layoutEnrichment": [
+      "None"
+    ],
+    "evaluationType": [
+      "Lab Study"
+    ],
+    "quantitativeMeasures": [
+      "Satisfaction",
+      "Task Accuracy"
+    ],
+    "inputDataCategories": [
+      "Numeric"
+    ],
+    "outputFormatCategories": [
+      "FI: Statistics"
+    ],
+    "slug": "projectionexplorer"
+  },
+  {
+    "abbreviation": "IXVC",
+    "title": "IXVC: An interactive pipeline for explaining visual clusters in dimensionality reduction visualizations with decision trees",
+    "authors": "Bibal, Adrien; Clarinval, Antoine; Dumas, Bruno; Frénay, Benoît",
+    "year": 2021,
+    "url": "https://linkinghub.elsevier.com/retrieve/pii/S259000562100028X",
+    "github": null,
+    "task": [
+      "Discriminate (Complement)"
+    ],
+    "target": [
+      "Cluster"
+    ],
+    "drRequirements": [
+      "DR-Agnostic"
+    ],
+    "inputData": [
+      "Numeric"
+    ],
+    "outputFormat": [
+      "Trees or Rules"
+    ],
+    "outputComplexity": [
+      "No Scalability Control"
+    ],
+    "interactive": [
+      "Interactive"
+    ],
+    "layoutEnrichment": [
+      "None"
+    ],
+    "evaluationType": [
+      "Informal Feedback",
+      "Lab Study"
+    ],
+    "quantitativeMeasures": [
+      "Satisfaction"
+    ],
+    "inputDataCategories": [
+      "Numeric"
+    ],
+    "outputFormatCategories": [
+      "Trees or Rules"
+    ],
+    "slug": "ixvc"
+  },
+  {
+    "abbreviation": "JIT",
+    "title": "Just-in-time annotation of clusters, outliers, and trends in point-based data visualizations",
+    "authors": "Kandogan, Eser",
+    "year": 2012,
+    "url": "https://ieeexplore.ieee.org/document/6400487/?arnumber=6400487&tag=1",
+    "github": null,
+    "task": [
+      "Characterize"
+    ],
+    "target": [
+      "Cluster"
+    ],
+    "drRequirements": [
+      "DR-Agnostic"
+    ],
+    "inputData": [
+      "Numeric",
+      "Categorical or Mixed"
+    ],
+    "outputFormat": [
+      "Clustering",
+      "Trees or Rules"
+    ],
+    "outputComplexity": [
+      "No Scalability Control"
+    ],
+    "interactive": [
+      "Interactive"
+    ],
+    "layoutEnrichment": [
+      "Cluster"
+    ],
+    "evaluationType": [],
+    "quantitativeMeasures": [],
+    "inputDataCategories": [
+      "Numeric",
+      "Categorical or Mixed"
+    ],
+    "outputFormatCategories": [
+      "Clustering",
+      "Trees or Rules"
+    ],
+    "slug": "jit"
+  },
+  {
+    "abbreviation": "LAVA",
+    "title": "LAVA: Explainability for Unsupervised Latent Embeddings",
+    "authors": "Ivan Stresec, Joana P. Gonçalves",
+    "year": 2025,
+    "url": "https://arxiv.org/abs/2509.21149",
+    "github": null,
+    "task": [
+      "Characterize"
+    ],
+    "target": [
+      "Global"
+    ],
+    "drRequirements": [
+      "DR-Agnostic"
+    ],
+    "inputData": [
+      "Numeric"
+    ],
+    "outputFormat": [
+      "FI: Statistics (Correlation, Matrix Factorization)",
+      "LD Geometric"
+    ],
+    "outputComplexity": [
+      "No Scalability Control"
+    ],
+    "interactive": [
+      "Static"
+    ],
+    "layoutEnrichment": [
+      "None"
+    ],
+    "evaluationType": [],
+    "quantitativeMeasures": [],
+    "inputDataCategories": [
+      "Numeric"
+    ],
+    "outputFormatCategories": [
+      "FI: Statistics",
+      "LD Geometric"
+    ],
+    "slug": "lava"
+  },
+  {
+    "abbreviation": "Metric Learning",
+    "title": "Metric Learning in Dimensionality Reduction:",
+    "authors": "Schulz, Alexander; Hammer, Barbara",
+    "year": 2015,
+    "url": "http://www.scitepress.org/DigitalLibrary/Link.aspx?doi=10.5220/0005200802320239",
+    "github": null,
+    "task": [
+      "Characterize"
+    ],
+    "target": [
+      "Global"
+    ],
+    "drRequirements": [
+      "DR-Agnostic"
+    ],
+    "inputData": [
+      "Numeric"
+    ],
+    "outputFormat": [
+      "FI: Model-Derived (Metric Learning)"
+    ],
+    "outputComplexity": [
+      "No Scalability Control"
+    ],
+    "interactive": [
+      "Static"
+    ],
+    "layoutEnrichment": [
+      "None"
+    ],
+    "evaluationType": [
+      "Quantitative"
+    ],
+    "quantitativeMeasures": [
+      "Fidelity"
+    ],
+    "inputDataCategories": [
+      "Numeric"
+    ],
+    "outputFormatCategories": [
+      "FI: Model-Derived"
+    ],
+    "slug": "metric-learning"
+  },
+  {
+    "abbreviation": "X-MAP",
+    "title": "Opening the black-box of Neighbor Embeddings with Hotelling’s T 2 statistic and Q -residuals",
+    "authors": "Rainer, Roman Josef; Mayr, Michael; Himmelbauer, Johannes; Nikzad-Langerodi, Ramin",
+    "year": 2023,
+    "url": "https://linkinghub.elsevier.com/retrieve/pii/S0169743923000904",
+    "github": "https://github.com/software-competencecenter-hagenberg/XMAP",
+    "task": [
+      "Discriminate (Explicit)"
+    ],
+    "target": [
+      "Cluster"
+    ],
+    "drRequirements": [
+      "PCA First"
+    ],
+    "inputData": [
+      "Numeric"
+    ],
+    "outputFormat": [
+      "FI: Statistics (Hotelling's T2)"
+    ],
+    "outputComplexity": [
+      "No Scalability Control"
+    ],
+    "interactive": [
+      "Interactive"
+    ],
+    "layoutEnrichment": [
+      "Spatial"
+    ],
+    "evaluationType": [],
+    "quantitativeMeasures": [],
+    "inputDataCategories": [
+      "Numeric"
+    ],
+    "outputFormatCategories": [
+      "FI: Statistics"
+    ],
+    "slug": "x-map"
+  },
+  {
+    "abbreviation": "DeepSE",
+    "title": "Semantic Explanation of Interactive Dimensionality Reduction",
+    "authors": "Bian, Yali; North, Chris; Krokos, Eric; Joseph, Sarah",
+    "year": 2021,
+    "url": "https://doi.org/10.1109/VIS49827.2021.9623322",
+    "github": null,
+    "task": [
+      "Probe HD to LD"
+    ],
+    "target": [
+      "Point"
+    ],
+    "drRequirements": [
+      "OOS"
+    ],
+    "inputData": [
+      "Textual"
+    ],
+    "outputFormat": [
+      "HD Feature Change",
+      "LD Geometric"
+    ],
+    "outputComplexity": [
+      "Cutoff"
+    ],
+    "interactive": [
+      "Interactive"
+    ],
+    "layoutEnrichment": [
+      "Direct"
+    ],
+    "evaluationType": [],
+    "quantitativeMeasures": [],
+    "inputDataCategories": [
+      "Textual"
+    ],
+    "outputFormatCategories": [
+      "HD Feature Change",
+      "LD Geometric"
+    ],
+    "slug": "deepse"
+  },
+  {
+    "abbreviation": "ProjCloud",
+    "title": "Semantic Wordification of Document Collections",
+    "authors": "Paulovich, Fernando V.; Toledo, Franklina M. B.; Telles, Guilherme P.; Minghim, Rosane; Nonato, Luis Gustavo",
+    "year": 2012,
+    "url": "https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1467-8659.2012.03107.x",
+    "github": null,
+    "task": [
+      "Characterize"
+    ],
+    "target": [
+      "Cluster"
+    ],
+    "drRequirements": [
+      "DR-Agnostic"
+    ],
+    "inputData": [
+      "Textual"
+    ],
+    "outputFormat": [
+      "FI: Statistics (Spectral)"
+    ],
+    "outputComplexity": [
+      "Cutoff"
+    ],
+    "interactive": [
+      "Interactive"
+    ],
+    "layoutEnrichment": [
+      "Cluster"
+    ],
+    "evaluationType": [],
+    "quantitativeMeasures": [],
+    "inputDataCategories": [
+      "Textual"
+    ],
+    "outputFormatCategories": [
+      "FI: Statistics"
+    ],
+    "slug": "projcloud"
+  },
+  {
+    "abbreviation": "SemCSE-Multi",
+    "title": "SemCSE-Multi: Multifaceted and Decodable Embeddings for Aspect-Specific and Interpretable Scientific Domain Mapping",
+    "authors": "Brinner, Zarrieß",
+    "year": 2025,
+    "url": "https://aclanthology.org/2026.acl-long.1884/",
+    "github": null,
+    "task": [
+      "Probe LD to HD"
+    ],
+    "target": [
+      "Point"
+    ],
+    "drRequirements": [
+      "Differentiable"
+    ],
+    "inputData": [
+      "Textual"
+    ],
+    "outputFormat": [
+      "Natural Language"
+    ],
+    "outputComplexity": [
+      "No Scalability Control"
+    ],
+    "interactive": [
+      "Static"
+    ],
+    "layoutEnrichment": [
+      "None"
+    ],
+    "evaluationType": [
+      "Quantitative"
+    ],
+    "quantitativeMeasures": [
+      "Fidelity"
+    ],
+    "inputDataCategories": [
+      "Textual"
+    ],
+    "outputFormatCategories": [
+      "Natural Language"
+    ],
+    "slug": "semcse-multi"
+  },
+  {
+    "abbreviation": "SlowMoMan",
+    "title": "SlowMoMan: a web app for discovery of important features along user-drawn trajectories in 2D embeddings",
+    "authors": "Deol, Kiran; Weber, Griffin M; Yu, Yun William",
+    "year": 2024,
+    "url": "https://academic.oup.com/bioinformaticsadvances/article/doi/10.1093/bioadv/vbae095/7697109",
+    "github": null,
+    "task": [
+      "Characterize"
+    ],
+    "target": [
+      "Trajectory"
+    ],
+    "drRequirements": [
+      "DR-Agnostic"
+    ],
+    "inputData": [
+      "Numeric"
+    ],
+    "outputFormat": [
+      "FI: Statistics (Autocorrelation)"
+    ],
+    "outputComplexity": [
+      "Cutoff"
+    ],
+    "interactive": [
+      "Interactive"
+    ],
+    "layoutEnrichment": [
+      "None"
+    ],
+    "evaluationType": [],
+    "quantitativeMeasures": [],
+    "inputDataCategories": [
+      "Numeric"
+    ],
+    "outputFormatCategories": [
+      "FI: Statistics"
+    ],
+    "slug": "slowmoman"
+  },
+  {
+    "abbreviation": "ccPCA",
+    "title": "Supporting Analysis of Dimensionality Reduction Results with Contrastive Learning",
+    "authors": "Fujiwara, Takanori; Kwon, Oh-Hyun; Ma, Kwan-Liu",
+    "year": 2020,
+    "url": "https://ieeexplore.ieee.org/abstract/document/8805461",
+    "github": null,
+    "task": [
+      "Discriminate (Complement)"
+    ],
+    "target": [
+      "Cluster"
+    ],
+    "drRequirements": [
+      "DR-Agnostic"
+    ],
+    "inputData": [
+      "Numeric"
+    ],
+    "outputFormat": [
+      "FI: Statistics (EVD)"
+    ],
+    "outputComplexity": [
+      "Aggregation"
+    ],
+    "interactive": [
+      "Interactive"
+    ],
+    "layoutEnrichment": [
+      "None"
+    ],
+    "evaluationType": [],
+    "quantitativeMeasures": [],
+    "inputDataCategories": [
+      "Numeric"
+    ],
+    "outputFormatCategories": [
+      "FI: Statistics"
+    ],
+    "slug": "ccpca"
+  },
+  {
+    "abbreviation": "t-viSNE",
+    "title": "T-viSNE: Interactive Assessment and Interpretation of t-SNE Projections",
+    "authors": "Chatzimparmpas, Angelos; Martins, Rafael M; Kerren, Andreas",
+    "year": 2020,
+    "url": "https://ieeexplore.ieee.org/document/9064929",
+    "github": "https://github.com/angeloschatzimparmpas/t-viSNE",
+    "task": [
+      "Characterize"
+    ],
+    "target": [
+      "Trajectory"
+    ],
+    "drRequirements": [
+      "t-SNE"
+    ],
+    "inputData": [
+      "Numeric"
+    ],
+    "outputFormat": [
+      "FI: Statistics (Correlation)"
+    ],
+    "outputComplexity": [
+      "Cutoff"
+    ],
+    "interactive": [
+      "Interactive"
+    ],
+    "layoutEnrichment": [
+      "None"
+    ],
+    "evaluationType": [
+      "Lab Study"
+    ],
+    "quantitativeMeasures": [
+      "Task Time",
+      "Satisfaction"
+    ],
+    "inputDataCategories": [
+      "Numeric"
+    ],
+    "outputFormatCategories": [
+      "FI: Statistics"
+    ],
+    "slug": "t-visne"
+  },
+  {
+    "abbreviation": "TabEE",
+    "title": "TabEE: Tabular Embeddings Explanations",
+    "authors": "Copul, Roni; Frost, Nave; Milo, Tova; Razmadze, Kathy",
+    "year": 2024,
+    "url": "https://doi.org/10.1145/3639329",
+    "github": "https://github.com/KathyRaz/TabEE",
+    "task": [
+      "Discriminate (Data)"
+    ],
+    "target": [
+      "Cluster"
+    ],
+    "drRequirements": [
+      "DR-Agnostic"
+    ],
+    "inputData": [
+      "Numeric",
+      "Categorical or Mixed"
+    ],
+    "outputFormat": [
+      "FI: Statistics (JS-Divergence)",
+      "Clustering"
+    ],
+    "outputComplexity": [
+      "Cutoff"
+    ],
+    "interactive": [
+      "Static"
+    ],
+    "layoutEnrichment": [
+      "None"
+    ],
+    "evaluationType": [
+      "Quantitative",
+      "Lab Study"
+    ],
+    "quantitativeMeasures": [
+      "Robustness",
+      "Diversity",
+      "Fidelity",
+      "Task Accuracy"
+    ],
+    "inputDataCategories": [
+      "Numeric",
+      "Categorical or Mixed"
+    ],
+    "outputFormatCategories": [
+      "FI: Statistics",
+      "Clustering"
+    ],
+    "slug": "tabee"
+  },
+  {
+    "abbreviation": "DimWise",
+    "title": "Towards Explainable Graph Embeddings for Gait Assessment Using Per-Cluster Dimensional Weighting",
+    "authors": "Lochhead, C.; Fisher, R.B.",
+    "year": 2025,
+    "url": "https://www.scopus.com/inward/record.uri?eid=2-s2.0-105010326379&doi=10.3390%2Fs25134106&partnerID=40&md5=22063baf641db2cc2be0185d0f37d75f",
+    "github": null,
+    "task": [
+      "Discriminate (Explicit)"
+    ],
+    "target": [
+      "Cluster"
+    ],
+    "drRequirements": [
+      "DR-Agnostic"
+    ],
+    "inputData": [
+      "Specific: Graph-Based Gait Sequence"
+    ],
+    "outputFormat": [
+      "FI: Statistics (Variance)"
+    ],
+    "outputComplexity": [
+      "Aggregation"
+    ],
+    "interactive": [
+      "Static"
+    ],
+    "layoutEnrichment": [
+      "None"
+    ],
+    "evaluationType": [
+      "Quantitative"
+    ],
+    "quantitativeMeasures": [
+      "Fidelity"
+    ],
+    "inputDataCategories": [
+      "Specific"
+    ],
+    "outputFormatCategories": [
+      "FI: Statistics"
+    ],
+    "slug": "dimwise"
+  },
+  {
+    "abbreviation": "CSM",
+    "title": "Uncovering Representative Groups in Multidimensional Projections",
+    "authors": "Joia, P.; Petronetto, F.; Nonato, L.g.",
+    "year": 2015,
+    "url": "https://onlinelibrary.wiley.com/doi/abs/10.1111/cgf.12640",
+    "github": null,
+    "task": [
+      "Characterize"
+    ],
+    "target": [
+      "Cluster"
+    ],
+    "drRequirements": [
+      "DR-Agnostic"
+    ],
+    "inputData": [
+      "Numeric"
+    ],
+    "outputFormat": [
+      "Clustering",
+      "FI: Statistics (SVD)"
+    ],
+    "outputComplexity": [
+      "Cutoff"
+    ],
+    "interactive": [
+      "Static"
+    ],
+    "layoutEnrichment": [
+      "Cluster"
+    ],
+    "evaluationType": [],
+    "quantitativeMeasures": [],
+    "inputDataCategories": [
+      "Numeric"
+    ],
+    "outputFormatCategories": [
+      "Clustering",
+      "FI: Statistics"
+    ],
+    "slug": "csm"
+  },
+  {
+    "abbreviation": "Variance-based Region Annotation",
+    "title": "Understanding attribute variability in multidimensional projections",
+    "authors": "Pagliosa, Lucas; Pagliosa, Paulo; Nonato, Luis Gustavo",
+    "year": 2017,
+    "url": "https://doi.org/10.1109/SIBGRAPI.2016.048",
+    "github": null,
+    "task": [
+      "Characterize"
+    ],
+    "target": [
+      "Cluster"
+    ],
+    "drRequirements": [
+      "DR-Agnostic"
+    ],
+    "inputData": [
+      "Numeric"
+    ],
+    "outputFormat": [
+      "FI: Statistics (Variance)",
+      "Clustering"
+    ],
+    "outputComplexity": [
+      "No Scalability Control"
+    ],
+    "interactive": [
+      "Interactive"
+    ],
+    "layoutEnrichment": [
+      "Spatial"
+    ],
+    "evaluationType": [],
+    "quantitativeMeasures": [],
+    "inputDataCategories": [
+      "Numeric"
+    ],
+    "outputFormatCategories": [
+      "FI: Statistics",
+      "Clustering"
+    ],
+    "slug": "variance-based-region-annotation"
+  },
+  {
+    "abbreviation": "NNInv",
+    "title": "UnProjection: Leveraging Inverse-Projections for Visual Analytics of High-Dimensional Data",
+    "authors": "Espadoto, Mateus; Appleby, Gabriel; Suh, Ashley; Cashman, Dylan; Li, Mingwei; Scheidegger, Carlos; Anderson, Erik W.; Chang, Remco; Telea, Alexandru C.",
+    "year": 2023,
+    "url": "https://ieeexplore.ieee.org/document/9606529/",
+    "github": null,
+    "task": [
+      "Probe LD to HD"
+    ],
+    "target": [
+      "Point"
+    ],
+    "drRequirements": [
+      "DR-Agnostic"
+    ],
+    "inputData": [
+      "Numeric",
+      "Image"
+    ],
+    "outputFormat": [
+      "LD Geometric",
+      "HD Feature Change"
+    ],
+    "outputComplexity": [
+      "No Scalability Control"
+    ],
+    "interactive": [
+      "Static"
+    ],
+    "layoutEnrichment": [
+      "Spatial"
+    ],
+    "evaluationType": [
+      "Quantitative"
+    ],
+    "quantitativeMeasures": [
+      "Fidelity"
+    ],
+    "inputDataCategories": [
+      "Numeric",
+      "Image"
+    ],
+    "outputFormatCategories": [
+      "LD Geometric",
+      "HD Feature Change"
+    ],
+    "slug": "nninv"
+  },
+  {
+    "abbreviation": "VERA",
+    "title": "VERA: Generating Visual Explanations of Two-Dimensional Embeddings via Region Annotation",
+    "authors": "Poličar, Pavlin G.; Zupan, Blaž",
+    "year": 2024,
+    "url": "http://arxiv.org/abs/2406.04808",
+    "github": "https://github.com/pavlin-policar/vera",
+    "task": [
+      "Discriminate (Complement)",
+      "Characterize"
+    ],
+    "target": [
+      "Cluster"
+    ],
+    "drRequirements": [
+      "DR-Agnostic"
+    ],
+    "inputData": [
+      "Numeric",
+      "Categorical or Mixed"
+    ],
+    "outputFormat": [
+      "Clustering",
+      "Trees or Rules"
+    ],
+    "outputComplexity": [
+      "Cutoff",
+      "Sparsity"
+    ],
+    "interactive": [
+      "Static"
+    ],
+    "layoutEnrichment": [
+      "Cluster"
+    ],
+    "evaluationType": [
+      "Lab Study"
+    ],
+    "quantitativeMeasures": [
+      "Task Accuracy",
+      "Task Time",
+      "Satisfaction"
+    ],
+    "inputDataCategories": [
+      "Numeric",
+      "Categorical or Mixed"
+    ],
+    "outputFormatCategories": [
+      "Clustering",
+      "Trees or Rules"
+    ],
+    "slug": "vera"
+  },
+  {
+    "abbreviation": "LAPS, VisExPreS",
+    "title": "VisExPreS: A Visual Interactive Toolkit for User-driven Evaluations of Embeddings",
+    "authors": "Ghosh, Aindrila; Nashaat, Mona; Miller, James; Quader, Shaikh",
+    "year": 2022,
+    "url": "https://doi.org/10.1109/TVCG.2020.3039106",
+    "github": null,
+    "task": [
+      "Characterize"
+    ],
+    "target": [
+      "Point"
+    ],
+    "drRequirements": [
+      "DR-Agnostic"
+    ],
+    "inputData": [
+      "Numeric",
+      "Categorical or Mixed"
+    ],
+    "outputFormat": [
+      "FI: Statistics (Correlation)"
+    ],
+    "outputComplexity": [
+      "Cutoff"
+    ],
+    "interactive": [
+      "Interactive"
+    ],
+    "layoutEnrichment": [
+      "None"
+    ],
+    "evaluationType": [
+      "Lab Study"
+    ],
+    "quantitativeMeasures": [
+      "Task Accuracy",
+      "Task Time",
+      "Satisfaction"
+    ],
+    "inputDataCategories": [
+      "Numeric",
+      "Categorical or Mixed"
+    ],
+    "outputFormatCategories": [
+      "FI: Statistics"
+    ],
+    "slug": "laps-visexpres"
+  }
+]

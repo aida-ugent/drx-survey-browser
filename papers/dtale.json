@@ -1,0 +1,45 @@
+{
+  "abbreviation": "DTALE",
+  "title": "Explainable nucleus classification using Decision Tree Approximation of Learned Embeddings",
+  "authors": "Amgad, Mohamed; Atteya, Lamees A.; Hussein, Hagar; Mohammed, Kareem Hosny; Hafiz, Ehab; Elsebaie, Maha A. T.; Mobadersany, Pooya; Manthey, David; Gutman, David A.; Elfandy, Habiba; Cooper, Lee A. D.",
+  "year": 2022,
+  "url": "https://doi.org/10.1093/bioinformatics/btab670",
+  "github": "https://github.com/CancerDataScience/NuCLS",
+  "task": [
+    "Characterize"
+  ],
+  "target": [
+    "Global"
+  ],
+  "drRequirements": [
+    "DR-Agnostic"
+  ],
+  "inputData": [
+    "Specific: Histopathology Images"
+  ],
+  "outputFormat": [
+    "Trees or Rules"
+  ],
+  "outputComplexity": [
+    "Sparsity"
+  ],
+  "interactive": [
+    "Static"
+  ],
+  "layoutEnrichment": [
+    "Direct"
+  ],
+  "evaluationType": [
+    "Quantitative"
+  ],
+  "quantitativeMeasures": [
+    "Fidelity"
+  ],
+  "inputDataCategories": [
+    "Specific"
+  ],
+  "outputFormatCategories": [
+    "Trees or Rules"
+  ],
+  "slug": "dtale"
+}

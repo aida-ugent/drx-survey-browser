@@ -1,0 +1,44 @@
+{
+  "abbreviation": "t-SNE Gradients",
+  "title": "Gradient-based explanation for non-linear non-parametric dimensionality reduction",
+  "authors": "Corbugy, Sacha; Marion, Rebecca; Frénay, Benoît",
+  "year": 2024,
+  "url": "https://doi.org/10.1007/s10618-024-01055-6",
+  "github": "https://github.com/sady410/tsne_gradients_explanation",
+  "task": [
+    "Probe HD to LD"
+  ],
+  "target": [
+    "Global"
+  ],
+  "drRequirements": [
+    "t-SNE"
+  ],
+  "inputData": [
+    "Numeric"
+  ],
+  "outputFormat": [
+    "LD Geometric",
+    "FI: Model-Derived (DR Gradients)"
+  ],
+  "outputComplexity": [
+    "No Scalability Control"
+  ],
+  "interactive": [
+    "Static"
+  ],
+  "layoutEnrichment": [
+    "Spatial",
+    "Direct"
+  ],
+  "evaluationType": [],
+  "quantitativeMeasures": [],
+  "inputDataCategories": [
+    "Numeric"
+  ],
+  "outputFormatCategories": [
+    "LD Geometric",
+    "FI: Model-Derived"
+  ],
+  "slug": "t-sne-gradients"
+}

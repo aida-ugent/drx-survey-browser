@@ -1,0 +1,46 @@
+{
+  "abbreviation": "ProjectionExplorer",
+  "title": "Interactive tools for explaining multidimensional projections for high-dimensional tabular data",
+  "authors": "Thijssen, Julian; Tian, Zonglin; Telea, Alexandru",
+  "year": 2024,
+  "url": "https://linkinghub.elsevier.com/retrieve/pii/S0097849324001225",
+  "github": "https://github.com/JulianThijssen/ProjectionExplorer",
+  "task": [
+    "Characterize"
+  ],
+  "target": [
+    "Point"
+  ],
+  "drRequirements": [
+    "DR-Agnostic"
+  ],
+  "inputData": [
+    "Numeric"
+  ],
+  "outputFormat": [
+    "FI: Statistics (Variance)"
+  ],
+  "outputComplexity": [
+    "Cutoff"
+  ],
+  "interactive": [
+    "Interactive"
+  ],
+  "layoutEnrichment": [
+    "None"
+  ],
+  "evaluationType": [
+    "Lab Study"
+  ],
+  "quantitativeMeasures": [
+    "Satisfaction",
+    "Task Accuracy"
+  ],
+  "inputDataCategories": [
+    "Numeric"
+  ],
+  "outputFormatCategories": [
+    "FI: Statistics"
+  ],
+  "slug": "projectionexplorer"
+}

@@ -1,0 +1,45 @@
+{
+  "abbreviation": "Metric Learning",
+  "title": "Metric Learning in Dimensionality Reduction:",
+  "authors": "Schulz, Alexander; Hammer, Barbara",
+  "year": 2015,
+  "url": "http://www.scitepress.org/DigitalLibrary/Link.aspx?doi=10.5220/0005200802320239",
+  "github": null,
+  "task": [
+    "Characterize"
+  ],
+  "target": [
+    "Global"
+  ],
+  "drRequirements": [
+    "DR-Agnostic"
+  ],
+  "inputData": [
+    "Numeric"
+  ],
+  "outputFormat": [
+    "FI: Model-Derived (Metric Learning)"
+  ],
+  "outputComplexity": [
+    "No Scalability Control"
+  ],
+  "interactive": [
+    "Static"
+  ],
+  "layoutEnrichment": [
+    "None"
+  ],
+  "evaluationType": [
+    "Quantitative"
+  ],
+  "quantitativeMeasures": [
+    "Fidelity"
+  ],
+  "inputDataCategories": [
+    "Numeric"
+  ],
+  "outputFormatCategories": [
+    "FI: Model-Derived"
+  ],
+  "slug": "metric-learning"
+}

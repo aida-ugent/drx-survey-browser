@@ -1,0 +1,46 @@
+{
+  "abbreviation": "IXVC",
+  "title": "IXVC: An interactive pipeline for explaining visual clusters in dimensionality reduction visualizations with decision trees",
+  "authors": "Bibal, Adrien; Clarinval, Antoine; Dumas, Bruno; Frénay, Benoît",
+  "year": 2021,
+  "url": "https://linkinghub.elsevier.com/retrieve/pii/S259000562100028X",
+  "github": null,
+  "task": [
+    "Discriminate (Complement)"
+  ],
+  "target": [
+    "Cluster"
+  ],
+  "drRequirements": [
+    "DR-Agnostic"
+  ],
+  "inputData": [
+    "Numeric"
+  ],
+  "outputFormat": [
+    "Trees or Rules"
+  ],
+  "outputComplexity": [
+    "No Scalability Control"
+  ],
+  "interactive": [
+    "Interactive"
+  ],
+  "layoutEnrichment": [
+    "None"
+  ],
+  "evaluationType": [
+    "Informal Feedback",
+    "Lab Study"
+  ],
+  "quantitativeMeasures": [
+    "Satisfaction"
+  ],
+  "inputDataCategories": [
+    "Numeric"
+  ],
+  "outputFormatCategories": [
+    "Trees or Rules"
+  ],
+  "slug": "ixvc"
+}

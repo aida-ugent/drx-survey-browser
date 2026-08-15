@@ -1,0 +1,50 @@
+{
+  "abbreviation": "iHELP",
+  "title": "iHELP: interactive hierarchical linear projections for interpreting non-linear projections",
+  "authors": "Zeng, Xingchen; Zhou, Haowen; Li, Zhicong; Zhang, Chenqi; Lin, Juncong; Xia, Jiazhi; Yang, Yanyi; Kui, Xiaoyan",
+  "year": 2022,
+  "url": "https://link.springer.com/10.1007/s12650-022-00900-4",
+  "github": null,
+  "task": [
+    "Characterize"
+  ],
+  "target": [
+    "Trajectory"
+  ],
+  "drRequirements": [
+    "DR-Agnostic"
+  ],
+  "inputData": [
+    "Numeric"
+  ],
+  "outputFormat": [
+    "Clustering",
+    "LD Geometric",
+    "FI: Statistics (Correlation)"
+  ],
+  "outputComplexity": [
+    "Aggregation"
+  ],
+  "interactive": [
+    "Interactive"
+  ],
+  "layoutEnrichment": [
+    "None"
+  ],
+  "evaluationType": [
+    "Informal Feedback",
+    "Quantitative"
+  ],
+  "quantitativeMeasures": [
+    "Fidelity"
+  ],
+  "inputDataCategories": [
+    "Numeric"
+  ],
+  "outputFormatCategories": [
+    "Clustering",
+    "LD Geometric",
+    "FI: Statistics"
+  ],
+  "slug": "ihelp"
+}

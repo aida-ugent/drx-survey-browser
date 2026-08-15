@@ -1,0 +1,47 @@
+{
+  "abbreviation": "DimBridge",
+  "title": "DimBridge: Interactive Explanation of Visual Patterns in Dimensionality Reductions with Predicate Logic",
+  "authors": "Montambault, Brian; Appleby, Gabriel; Rogers, Jen; Brumar, Camelia D.; Li, Mingwei; Chang, Remco",
+  "year": 2025,
+  "url": "https://doi.org/10.1109/TVCG.2024.3456391",
+  "github": "https://github.com/jrogerthat/DimBridge-App/tree/master",
+  "task": [
+    "Discriminate (Explicit)",
+    "Discriminate (Complement)"
+  ],
+  "target": [
+    "Cluster",
+    "Trajectory"
+  ],
+  "drRequirements": [
+    "DR-Agnostic"
+  ],
+  "inputData": [
+    "Numeric"
+  ],
+  "outputFormat": [
+    "Trees or Rules",
+    "FI: Model-Derived (Predicate Regression)"
+  ],
+  "outputComplexity": [
+    "Sparsity"
+  ],
+  "interactive": [
+    "Interactive"
+  ],
+  "layoutEnrichment": [
+    "None"
+  ],
+  "evaluationType": [
+    "Informal Feedback"
+  ],
+  "quantitativeMeasures": [],
+  "inputDataCategories": [
+    "Numeric"
+  ],
+  "outputFormatCategories": [
+    "Trees or Rules",
+    "FI: Model-Derived"
+  ],
+  "slug": "dimbridge"
+}

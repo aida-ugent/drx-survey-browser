@@ -1,0 +1,49 @@
+{
+  "abbreviation": "InfoClus",
+  "title": "InfoClus: Informative Clustering of High-dimensional Data Embeddings",
+  "authors": "Lai, Fuyin; Heiter, Edith; Bied, Guillaume; Lijffijt, Jefrey",
+  "year": 2025,
+  "url": "https://link.springer.com/chapter/10.1007/978-3-032-05962-8_28",
+  "github": "https://github.com/aida-ugent/InfoClus",
+  "task": [
+    "Discriminate (Data)"
+  ],
+  "target": [
+    "Cluster"
+  ],
+  "drRequirements": [
+    "DR-Agnostic"
+  ],
+  "inputData": [
+    "Numeric",
+    "Categorical or Mixed"
+  ],
+  "outputFormat": [
+    "Clustering",
+    "FI: Statistics (KL-Divergence)"
+  ],
+  "outputComplexity": [
+    "Sparsity"
+  ],
+  "interactive": [
+    "Static"
+  ],
+  "layoutEnrichment": [
+    "None"
+  ],
+  "evaluationType": [
+    "Quantitative"
+  ],
+  "quantitativeMeasures": [
+    "Complexity"
+  ],
+  "inputDataCategories": [
+    "Numeric",
+    "Categorical or Mixed"
+  ],
+  "outputFormatCategories": [
+    "Clustering",
+    "FI: Statistics"
+  ],
+  "slug": "infoclus"
+}

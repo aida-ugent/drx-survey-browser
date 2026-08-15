@@ -1,0 +1,41 @@
+{
+  "abbreviation": "ManifoldLasso",
+  "title": "A regression approach for explaining manifold embedding coordinates",
+  "authors": "Meila, Marina; Koelle, Samson J.; Zhang, Hanyu",
+  "year": 2018,
+  "url": "https://arxiv.org/abs/1811.11891",
+  "github": null,
+  "task": [
+    "Characterize"
+  ],
+  "target": [
+    "Global"
+  ],
+  "drRequirements": [
+    "Smooth Embedding"
+  ],
+  "inputData": [
+    "Numeric"
+  ],
+  "outputFormat": [
+    "FI: Model-Derived (LR)"
+  ],
+  "outputComplexity": [
+    "Sparsity"
+  ],
+  "interactive": [
+    "Static"
+  ],
+  "layoutEnrichment": [
+    "None"
+  ],
+  "evaluationType": [],
+  "quantitativeMeasures": [],
+  "inputDataCategories": [
+    "Numeric"
+  ],
+  "outputFormatCategories": [
+    "FI: Model-Derived"
+  ],
+  "slug": "manifoldlasso"
+}

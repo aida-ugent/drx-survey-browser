@@ -1,0 +1,44 @@
+{
+  "abbreviation": "Explain-and-Test",
+  "title": "Explain-and-Test: An Interactive Machine Learning Framework for Exploring Text Embeddings",
+  "authors": "Raval, Shivam; Wang, Carolyn; Viégas, Fernanda B.; Wattenberg, Martin",
+  "year": 2023,
+  "url": "https://doi.org/10.1109/VIS54172.2023.00052",
+  "github": "https://github.com/shivam-raval96/TextCluster-Explainer",
+  "task": [
+    "Discriminate (Complement)"
+  ],
+  "target": [
+    "Cluster"
+  ],
+  "drRequirements": [
+    "OOS"
+  ],
+  "inputData": [
+    "Textual"
+  ],
+  "outputFormat": [
+    "FI: Model-Derived (SVM)",
+    "Natural Language"
+  ],
+  "outputComplexity": [
+    "Cutoff"
+  ],
+  "interactive": [
+    "Interactive"
+  ],
+  "layoutEnrichment": [
+    "Direct",
+    "Cluster"
+  ],
+  "evaluationType": [],
+  "quantitativeMeasures": [],
+  "inputDataCategories": [
+    "Textual"
+  ],
+  "outputFormatCategories": [
+    "FI: Model-Derived",
+    "Natural Language"
+  ],
+  "slug": "explain-and-test"
+}

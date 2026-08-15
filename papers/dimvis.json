@@ -1,0 +1,45 @@
+{
+  "abbreviation": "DimVis",
+  "title": "DimVis: Interpreting Visual Clusters in Dimensionality Reduction With Explainable Boosting Machine",
+  "authors": "Salmanian, Parisa; Chatzimparmpas, Angelos; Karaca, Ali Can; Martins, Rafael M.",
+  "year": 2024,
+  "url": "http://arxiv.org/abs/2402.06885",
+  "github": "https://github.com/parisa-salmanian/DimVis",
+  "task": [
+    "Discriminate (Complement)"
+  ],
+  "target": [
+    "Cluster"
+  ],
+  "drRequirements": [
+    "DR-Agnostic"
+  ],
+  "inputData": [
+    "Numeric"
+  ],
+  "outputFormat": [
+    "FI: Model-Derived (EBM)"
+  ],
+  "outputComplexity": [
+    "Cutoff"
+  ],
+  "interactive": [
+    "Interactive"
+  ],
+  "layoutEnrichment": [
+    "None"
+  ],
+  "evaluationType": [
+    "Quantitative"
+  ],
+  "quantitativeMeasures": [
+    "Fidelity"
+  ],
+  "inputDataCategories": [
+    "Numeric"
+  ],
+  "outputFormatCategories": [
+    "FI: Model-Derived"
+  ],
+  "slug": "dimvis"
+}

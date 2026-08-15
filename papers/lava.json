@@ -1,0 +1,43 @@
+{
+  "abbreviation": "LAVA",
+  "title": "LAVA: Explainability for Unsupervised Latent Embeddings",
+  "authors": "Ivan Stresec, Joana P. Gonçalves",
+  "year": 2025,
+  "url": "https://arxiv.org/abs/2509.21149",
+  "github": null,
+  "task": [
+    "Characterize"
+  ],
+  "target": [
+    "Global"
+  ],
+  "drRequirements": [
+    "DR-Agnostic"
+  ],
+  "inputData": [
+    "Numeric"
+  ],
+  "outputFormat": [
+    "FI: Statistics (Correlation, Matrix Factorization)",
+    "LD Geometric"
+  ],
+  "outputComplexity": [
+    "No Scalability Control"
+  ],
+  "interactive": [
+    "Static"
+  ],
+  "layoutEnrichment": [
+    "None"
+  ],
+  "evaluationType": [],
+  "quantitativeMeasures": [],
+  "inputDataCategories": [
+    "Numeric"
+  ],
+  "outputFormatCategories": [
+    "FI: Statistics",
+    "LD Geometric"
+  ],
+  "slug": "lava"
+}

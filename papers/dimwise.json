@@ -1,0 +1,45 @@
+{
+  "abbreviation": "DimWise",
+  "title": "Towards Explainable Graph Embeddings for Gait Assessment Using Per-Cluster Dimensional Weighting",
+  "authors": "Lochhead, C.; Fisher, R.B.",
+  "year": 2025,
+  "url": "https://www.scopus.com/inward/record.uri?eid=2-s2.0-105010326379&doi=10.3390%2Fs25134106&partnerID=40&md5=22063baf641db2cc2be0185d0f37d75f",
+  "github": null,
+  "task": [
+    "Discriminate (Explicit)"
+  ],
+  "target": [
+    "Cluster"
+  ],
+  "drRequirements": [
+    "DR-Agnostic"
+  ],
+  "inputData": [
+    "Specific: Graph-Based Gait Sequence"
+  ],
+  "outputFormat": [
+    "FI: Statistics (Variance)"
+  ],
+  "outputComplexity": [
+    "Aggregation"
+  ],
+  "interactive": [
+    "Static"
+  ],
+  "layoutEnrichment": [
+    "None"
+  ],
+  "evaluationType": [
+    "Quantitative"
+  ],
+  "quantitativeMeasures": [
+    "Fidelity"
+  ],
+  "inputDataCategories": [
+    "Specific"
+  ],
+  "outputFormatCategories": [
+    "FI: Statistics"
+  ],
+  "slug": "dimwise"
+}

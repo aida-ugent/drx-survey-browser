@@ -1,0 +1,45 @@
+{
+  "abbreviation": "JIT",
+  "title": "Just-in-time annotation of clusters, outliers, and trends in point-based data visualizations",
+  "authors": "Kandogan, Eser",
+  "year": 2012,
+  "url": "https://ieeexplore.ieee.org/document/6400487/?arnumber=6400487&tag=1",
+  "github": null,
+  "task": [
+    "Characterize"
+  ],
+  "target": [
+    "Cluster"
+  ],
+  "drRequirements": [
+    "DR-Agnostic"
+  ],
+  "inputData": [
+    "Numeric",
+    "Categorical or Mixed"
+  ],
+  "outputFormat": [
+    "Clustering",
+    "Trees or Rules"
+  ],
+  "outputComplexity": [
+    "No Scalability Control"
+  ],
+  "interactive": [
+    "Interactive"
+  ],
+  "layoutEnrichment": [
+    "Cluster"
+  ],
+  "evaluationType": [],
+  "quantitativeMeasures": [],
+  "inputDataCategories": [
+    "Numeric",
+    "Categorical or Mixed"
+  ],
+  "outputFormatCategories": [
+    "Clustering",
+    "Trees or Rules"
+  ],
+  "slug": "jit"
+}

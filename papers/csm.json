@@ -1,0 +1,43 @@
+{
+  "abbreviation": "CSM",
+  "title": "Uncovering Representative Groups in Multidimensional Projections",
+  "authors": "Joia, P.; Petronetto, F.; Nonato, L.g.",
+  "year": 2015,
+  "url": "https://onlinelibrary.wiley.com/doi/abs/10.1111/cgf.12640",
+  "github": null,
+  "task": [
+    "Characterize"
+  ],
+  "target": [
+    "Cluster"
+  ],
+  "drRequirements": [
+    "DR-Agnostic"
+  ],
+  "inputData": [
+    "Numeric"
+  ],
+  "outputFormat": [
+    "Clustering",
+    "FI: Statistics (SVD)"
+  ],
+  "outputComplexity": [
+    "Cutoff"
+  ],
+  "interactive": [
+    "Static"
+  ],
+  "layoutEnrichment": [
+    "Cluster"
+  ],
+  "evaluationType": [],
+  "quantitativeMeasures": [],
+  "inputDataCategories": [
+    "Numeric"
+  ],
+  "outputFormatCategories": [
+    "Clustering",
+    "FI: Statistics"
+  ],
+  "slug": "csm"
+}

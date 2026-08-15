@@ -1,0 +1,53 @@
+{
+  "abbreviation": "VERA",
+  "title": "VERA: Generating Visual Explanations of Two-Dimensional Embeddings via Region Annotation",
+  "authors": "Poličar, Pavlin G.; Zupan, Blaž",
+  "year": 2024,
+  "url": "http://arxiv.org/abs/2406.04808",
+  "github": "https://github.com/pavlin-policar/vera",
+  "task": [
+    "Discriminate (Complement)",
+    "Characterize"
+  ],
+  "target": [
+    "Cluster"
+  ],
+  "drRequirements": [
+    "DR-Agnostic"
+  ],
+  "inputData": [
+    "Numeric",
+    "Categorical or Mixed"
+  ],
+  "outputFormat": [
+    "Clustering",
+    "Trees or Rules"
+  ],
+  "outputComplexity": [
+    "Cutoff",
+    "Sparsity"
+  ],
+  "interactive": [
+    "Static"
+  ],
+  "layoutEnrichment": [
+    "Cluster"
+  ],
+  "evaluationType": [
+    "Lab Study"
+  ],
+  "quantitativeMeasures": [
+    "Task Accuracy",
+    "Task Time",
+    "Satisfaction"
+  ],
+  "inputDataCategories": [
+    "Numeric",
+    "Categorical or Mixed"
+  ],
+  "outputFormatCategories": [
+    "Clustering",
+    "Trees or Rules"
+  ],
+  "slug": "vera"
+}

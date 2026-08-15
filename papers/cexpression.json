@@ -1,0 +1,45 @@
+{
+  "abbreviation": "cExpression",
+  "title": "Contrastive analysis for scatterplot-based representations of dimensionality reduction",
+  "authors": "Marcílio-Jr, Wilson E.; Eler, Danilo M.; Garcia, Rogério E.",
+  "year": 2021,
+  "url": "https://www.sciencedirect.com/science/article/pii/S0097849321001783",
+  "github": null,
+  "task": [
+    "Discriminate (Complement)"
+  ],
+  "target": [
+    "Cluster"
+  ],
+  "drRequirements": [
+    "DR-Agnostic"
+  ],
+  "inputData": [
+    "Numeric"
+  ],
+  "outputFormat": [
+    "FI: Statistics (t-Test)"
+  ],
+  "outputComplexity": [
+    "Cutoff"
+  ],
+  "interactive": [
+    "Interactive"
+  ],
+  "layoutEnrichment": [
+    "Spatial"
+  ],
+  "evaluationType": [
+    "Quantitative"
+  ],
+  "quantitativeMeasures": [
+    "Fidelity"
+  ],
+  "inputDataCategories": [
+    "Numeric"
+  ],
+  "outputFormatCategories": [
+    "FI: Statistics"
+  ],
+  "slug": "cexpression"
+}

@@ -1,0 +1,46 @@
+{
+  "abbreviation": "PIE",
+  "title": "A Computational Approach to Interpreting the Embedding Space of Dimension Reduction",
+  "authors": "Zhang, Bingyuan; Uno, Kohei; Kodama, Hayata; Himori, Koichi; Matsui, Yusuke",
+  "year": 2024,
+  "url": "https://www.biorxiv.org/content/10.1101/2024.06.23.600292",
+  "github": null,
+  "task": [
+    "Characterize"
+  ],
+  "target": [
+    "Global"
+  ],
+  "drRequirements": [
+    "DR-Agnostic"
+  ],
+  "inputData": [
+    "Specific: scRNA-seq"
+  ],
+  "outputFormat": [
+    "LD Geometric"
+  ],
+  "outputComplexity": [
+    "Cutoff"
+  ],
+  "interactive": [
+    "Static"
+  ],
+  "layoutEnrichment": [
+    "Direct"
+  ],
+  "evaluationType": [
+    "Quantitative"
+  ],
+  "quantitativeMeasures": [
+    "Robustness",
+    "Fidelity"
+  ],
+  "inputDataCategories": [
+    "Specific"
+  ],
+  "outputFormatCategories": [
+    "LD Geometric"
+  ],
+  "slug": "pie"
+}

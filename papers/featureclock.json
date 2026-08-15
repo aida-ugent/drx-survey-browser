@@ -1,0 +1,47 @@
+{
+  "abbreviation": "FeatureClock",
+  "title": "Feature Clock: High-Dimensional Effects in Two-Dimensional Plots",
+  "authors": "Ovcharenko, Olga; Sevastjanova, Rita; Boeva, Valentina",
+  "year": 2024,
+  "url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10771082",
+  "github": "https://github.com/OlgaOvcharenko/feature_clock_visualization",
+  "task": [
+    "Discriminate (Explicit)",
+    "Characterize"
+  ],
+  "target": [
+    "Cluster",
+    "Global"
+  ],
+  "drRequirements": [
+    "DR-Agnostic"
+  ],
+  "inputData": [
+    "Numeric"
+  ],
+  "outputFormat": [
+    "FI: Model-Derived (LR)",
+    "LD Geometric"
+  ],
+  "outputComplexity": [
+    "Cutoff"
+  ],
+  "interactive": [
+    "Static"
+  ],
+  "layoutEnrichment": [
+    "Direct"
+  ],
+  "evaluationType": [
+    "Informal Feedback"
+  ],
+  "quantitativeMeasures": [],
+  "inputDataCategories": [
+    "Numeric"
+  ],
+  "outputFormatCategories": [
+    "FI: Model-Derived",
+    "LD Geometric"
+  ],
+  "slug": "featureclock"
+}

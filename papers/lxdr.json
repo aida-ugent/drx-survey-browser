@@ -1,0 +1,45 @@
+{
+  "abbreviation": "LXDR",
+  "title": "Exploring local interpretability in dimensionality reduction: Analysis and use cases",
+  "authors": "Mylonas, Nikolaos; Mollas, Ioannis; Bassiliades, Nick; Tsoumakas, Grigorios",
+  "year": 2024,
+  "url": "https://linkinghub.elsevier.com/retrieve/pii/S0957417424009400",
+  "github": "https://github.com/intelligence-csd-auth-gr/Interpretable-Unsupervised-Learning",
+  "task": [
+    "Characterize"
+  ],
+  "target": [
+    "Point"
+  ],
+  "drRequirements": [
+    "OOS"
+  ],
+  "inputData": [
+    "Numeric"
+  ],
+  "outputFormat": [
+    "FI: Model-Derived (LR, NN)"
+  ],
+  "outputComplexity": [
+    "Cutoff"
+  ],
+  "interactive": [
+    "Static"
+  ],
+  "layoutEnrichment": [
+    "None"
+  ],
+  "evaluationType": [
+    "Quantitative"
+  ],
+  "quantitativeMeasures": [
+    "Fidelity"
+  ],
+  "inputDataCategories": [
+    "Numeric"
+  ],
+  "outputFormatCategories": [
+    "FI: Model-Derived"
+  ],
+  "slug": "lxdr"
+}

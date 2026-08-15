@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DRX Browser</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h1>DRX Browser</h1>
+        <p class="subtitle">The State-of-the-Art in Explanation Methods for Two-Dimensional Embeddings</p>
+        <p class="authors">Edith Heiter, Fuyin Lai, Cyril de Bodt, Yvan Saeys, Jefrey Lijffijt</p>
+      </div>
+
+      <div class="filter-group">
+        <div class="search-row">
+          <label for="search">Search</label>
+          <button id="reset" type="button">Reset</button>
+        </div>
+        <input type="search" id="search" placeholder="Title or abbreviation…">
+      </div>
+
+      <div class="filter-group">
+        <label>Year</label>
+        <div class="year-range">
+          <input type="range" id="year-min" min="2012" max="2025" step="1">
+          <input type="range" id="year-max" min="2012" max="2025" step="1">
+          <div class="year-track"></div>
+          <div class="year-range-fill"></div>
+          <div class="year-thumb" id="year-thumb-min"></div>
+          <div class="year-thumb" id="year-thumb-max"></div>
+        </div>
+        <div class="year-labels">
+          <span id="year-min-label"></span>
+          <span>–</span>
+          <span id="year-max-label"></span>
+        </div>
+      </div>
+
+      <div class="filter-group">
+        <label class="checkbox-row">
+          <input type="checkbox" id="code-public">
+          Code public only
+        </label>
+      </div>
+
+      <div id="category-filters"></div>
+    </aside>
+
+    <main>
+      <div class="results-bar">
+        <span class="results-count"><span id="count">0</span> / <span id="total">0</span> papers</span>
+        <div class="sort-controls" id="sort-controls">
+          <span class="sort-label">Sort by</span>
+        </div>
+      </div>
+      <div class="gallery" id="gallery"></div>
+    </main>
+  </div>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

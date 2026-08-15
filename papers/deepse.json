@@ -1,0 +1,43 @@
+{
+  "abbreviation": "DeepSE",
+  "title": "Semantic Explanation of Interactive Dimensionality Reduction",
+  "authors": "Bian, Yali; North, Chris; Krokos, Eric; Joseph, Sarah",
+  "year": 2021,
+  "url": "https://doi.org/10.1109/VIS49827.2021.9623322",
+  "github": null,
+  "task": [
+    "Probe HD to LD"
+  ],
+  "target": [
+    "Point"
+  ],
+  "drRequirements": [
+    "OOS"
+  ],
+  "inputData": [
+    "Textual"
+  ],
+  "outputFormat": [
+    "HD Feature Change",
+    "LD Geometric"
+  ],
+  "outputComplexity": [
+    "Cutoff"
+  ],
+  "interactive": [
+    "Interactive"
+  ],
+  "layoutEnrichment": [
+    "Direct"
+  ],
+  "evaluationType": [],
+  "quantitativeMeasures": [],
+  "inputDataCategories": [
+    "Textual"
+  ],
+  "outputFormatCategories": [
+    "HD Feature Change",
+    "LD Geometric"
+  ],
+  "slug": "deepse"
+}

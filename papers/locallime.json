@@ -1,0 +1,43 @@
+{
+  "abbreviation": "LocalLIME",
+  "title": "Explaining t-SNE embeddings locally by adapting LIME",
+  "authors": "Bibal, Adrien; Vu, Viet Minh; Nanfack, Geraldin; Frenay, Benoit",
+  "year": 2020,
+  "url": "https://www.esann.org/sites/default/files/proceedings/2020/ES2020-105.pdf",
+  "github": null,
+  "task": [
+    "Characterize"
+  ],
+  "target": [
+    "Point"
+  ],
+  "drRequirements": [
+    "t-SNE"
+  ],
+  "inputData": [
+    "Numeric"
+  ],
+  "outputFormat": [
+    "LD Geometric",
+    "FI: Model-Derived (LR)"
+  ],
+  "outputComplexity": [
+    "Sparsity"
+  ],
+  "interactive": [
+    "Static"
+  ],
+  "layoutEnrichment": [
+    "Direct"
+  ],
+  "evaluationType": [],
+  "quantitativeMeasures": [],
+  "inputDataCategories": [
+    "Numeric"
+  ],
+  "outputFormatCategories": [
+    "LD Geometric",
+    "FI: Model-Derived"
+  ],
+  "slug": "locallime"
+}

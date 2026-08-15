@@ -1,0 +1,41 @@
+{
+  "abbreviation": "ccPCA",
+  "title": "Supporting Analysis of Dimensionality Reduction Results with Contrastive Learning",
+  "authors": "Fujiwara, Takanori; Kwon, Oh-Hyun; Ma, Kwan-Liu",
+  "year": 2020,
+  "url": "https://ieeexplore.ieee.org/abstract/document/8805461",
+  "github": null,
+  "task": [
+    "Discriminate (Complement)"
+  ],
+  "target": [
+    "Cluster"
+  ],
+  "drRequirements": [
+    "DR-Agnostic"
+  ],
+  "inputData": [
+    "Numeric"
+  ],
+  "outputFormat": [
+    "FI: Statistics (EVD)"
+  ],
+  "outputComplexity": [
+    "Aggregation"
+  ],
+  "interactive": [
+    "Interactive"
+  ],
+  "layoutEnrichment": [
+    "None"
+  ],
+  "evaluationType": [],
+  "quantitativeMeasures": [],
+  "inputDataCategories": [
+    "Numeric"
+  ],
+  "outputFormatCategories": [
+    "FI: Statistics"
+  ],
+  "slug": "ccpca"
+}

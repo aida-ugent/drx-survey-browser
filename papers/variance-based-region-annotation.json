@@ -1,0 +1,43 @@
+{
+  "abbreviation": "Variance-based Region Annotation",
+  "title": "Understanding attribute variability in multidimensional projections",
+  "authors": "Pagliosa, Lucas; Pagliosa, Paulo; Nonato, Luis Gustavo",
+  "year": 2017,
+  "url": "https://doi.org/10.1109/SIBGRAPI.2016.048",
+  "github": null,
+  "task": [
+    "Characterize"
+  ],
+  "target": [
+    "Cluster"
+  ],
+  "drRequirements": [
+    "DR-Agnostic"
+  ],
+  "inputData": [
+    "Numeric"
+  ],
+  "outputFormat": [
+    "FI: Statistics (Variance)",
+    "Clustering"
+  ],
+  "outputComplexity": [
+    "No Scalability Control"
+  ],
+  "interactive": [
+    "Interactive"
+  ],
+  "layoutEnrichment": [
+    "Spatial"
+  ],
+  "evaluationType": [],
+  "quantitativeMeasures": [],
+  "inputDataCategories": [
+    "Numeric"
+  ],
+  "outputFormatCategories": [
+    "FI: Statistics",
+    "Clustering"
+  ],
+  "slug": "variance-based-region-annotation"
+}

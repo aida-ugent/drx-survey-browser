@@ -1,0 +1,41 @@
+{
+  "abbreviation": "X-MAP",
+  "title": "Opening the black-box of Neighbor Embeddings with Hotelling’s T 2 statistic and Q -residuals",
+  "authors": "Rainer, Roman Josef; Mayr, Michael; Himmelbauer, Johannes; Nikzad-Langerodi, Ramin",
+  "year": 2023,
+  "url": "https://linkinghub.elsevier.com/retrieve/pii/S0169743923000904",
+  "github": "https://github.com/software-competencecenter-hagenberg/XMAP",
+  "task": [
+    "Discriminate (Explicit)"
+  ],
+  "target": [
+    "Cluster"
+  ],
+  "drRequirements": [
+    "PCA First"
+  ],
+  "inputData": [
+    "Numeric"
+  ],
+  "outputFormat": [
+    "FI: Statistics (Hotelling's T2)"
+  ],
+  "outputComplexity": [
+    "No Scalability Control"
+  ],
+  "interactive": [
+    "Interactive"
+  ],
+  "layoutEnrichment": [
+    "Spatial"
+  ],
+  "evaluationType": [],
+  "quantitativeMeasures": [],
+  "inputDataCategories": [
+    "Numeric"
+  ],
+  "outputFormatCategories": [
+    "FI: Statistics"
+  ],
+  "slug": "x-map"
+}

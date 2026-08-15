@@ -1,0 +1,45 @@
+{
+  "abbreviation": "SemCSE-Multi",
+  "title": "SemCSE-Multi: Multifaceted and Decodable Embeddings for Aspect-Specific and Interpretable Scientific Domain Mapping",
+  "authors": "Brinner, Zarrieß",
+  "year": 2025,
+  "url": "https://aclanthology.org/2026.acl-long.1884/",
+  "github": null,
+  "task": [
+    "Probe LD to HD"
+  ],
+  "target": [
+    "Point"
+  ],
+  "drRequirements": [
+    "Differentiable"
+  ],
+  "inputData": [
+    "Textual"
+  ],
+  "outputFormat": [
+    "Natural Language"
+  ],
+  "outputComplexity": [
+    "No Scalability Control"
+  ],
+  "interactive": [
+    "Static"
+  ],
+  "layoutEnrichment": [
+    "None"
+  ],
+  "evaluationType": [
+    "Quantitative"
+  ],
+  "quantitativeMeasures": [
+    "Fidelity"
+  ],
+  "inputDataCategories": [
+    "Textual"
+  ],
+  "outputFormatCategories": [
+    "Natural Language"
+  ],
+  "slug": "semcse-multi"
+}

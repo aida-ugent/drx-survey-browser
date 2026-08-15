@@ -1,0 +1,53 @@
+{
+  "abbreviation": "TabEE",
+  "title": "TabEE: Tabular Embeddings Explanations",
+  "authors": "Copul, Roni; Frost, Nave; Milo, Tova; Razmadze, Kathy",
+  "year": 2024,
+  "url": "https://doi.org/10.1145/3639329",
+  "github": "https://github.com/KathyRaz/TabEE",
+  "task": [
+    "Discriminate (Data)"
+  ],
+  "target": [
+    "Cluster"
+  ],
+  "drRequirements": [
+    "DR-Agnostic"
+  ],
+  "inputData": [
+    "Numeric",
+    "Categorical or Mixed"
+  ],
+  "outputFormat": [
+    "FI: Statistics (JS-Divergence)",
+    "Clustering"
+  ],
+  "outputComplexity": [
+    "Cutoff"
+  ],
+  "interactive": [
+    "Static"
+  ],
+  "layoutEnrichment": [
+    "None"
+  ],
+  "evaluationType": [
+    "Quantitative",
+    "Lab Study"
+  ],
+  "quantitativeMeasures": [
+    "Robustness",
+    "Diversity",
+    "Fidelity",
+    "Task Accuracy"
+  ],
+  "inputDataCategories": [
+    "Numeric",
+    "Categorical or Mixed"
+  ],
+  "outputFormatCategories": [
+    "FI: Statistics",
+    "Clustering"
+  ],
+  "slug": "tabee"
+}

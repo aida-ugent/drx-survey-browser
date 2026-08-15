@@ -1,0 +1,41 @@
+{
+  "abbreviation": "ProjCloud",
+  "title": "Semantic Wordification of Document Collections",
+  "authors": "Paulovich, Fernando V.; Toledo, Franklina M. B.; Telles, Guilherme P.; Minghim, Rosane; Nonato, Luis Gustavo",
+  "year": 2012,
+  "url": "https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1467-8659.2012.03107.x",
+  "github": null,
+  "task": [
+    "Characterize"
+  ],
+  "target": [
+    "Cluster"
+  ],
+  "drRequirements": [
+    "DR-Agnostic"
+  ],
+  "inputData": [
+    "Textual"
+  ],
+  "outputFormat": [
+    "FI: Statistics (Spectral)"
+  ],
+  "outputComplexity": [
+    "Cutoff"
+  ],
+  "interactive": [
+    "Interactive"
+  ],
+  "layoutEnrichment": [
+    "Cluster"
+  ],
+  "evaluationType": [],
+  "quantitativeMeasures": [],
+  "inputDataCategories": [
+    "Textual"
+  ],
+  "outputFormatCategories": [
+    "FI: Statistics"
+  ],
+  "slug": "projcloud"
+}

@@ -1,0 +1,47 @@
+{
+  "abbreviation": "DCE",
+  "title": "\"Why Here and Not There?\" -- Diverse Contrasting Explanations of Dimensionality Reduction",
+  "authors": "Artelt, André; Schulz, Alexander; Hammer, Barbara",
+  "year": 2023,
+  "url": "https://doi.org/10.5220/0011618300003411",
+  "github": "https://github.com/andreArtelt/ContrastingExplanationDimRed",
+  "task": [
+    "Probe LD to HD"
+  ],
+  "target": [
+    "Point"
+  ],
+  "drRequirements": [
+    "Parametric"
+  ],
+  "inputData": [
+    "Numeric"
+  ],
+  "outputFormat": [
+    "HD Feature Change"
+  ],
+  "outputComplexity": [
+    "Sparsity"
+  ],
+  "interactive": [
+    "Static"
+  ],
+  "layoutEnrichment": [
+    "None"
+  ],
+  "evaluationType": [
+    "Quantitative"
+  ],
+  "quantitativeMeasures": [
+    "Fidelity",
+    "Complexity",
+    "Diversity"
+  ],
+  "inputDataCategories": [
+    "Numeric"
+  ],
+  "outputFormatCategories": [
+    "HD Feature Change"
+  ],
+  "slug": "dce"
+}

@@ -1,0 +1,50 @@
+{
+  "abbreviation": "Forward and Backward Projection",
+  "title": "A visual interaction framework for dimensionality reduction based data exploration",
+  "authors": "Cavallo, Marco; Demiralp, Çaǧatay",
+  "year": 2018,
+  "url": "https://doi.org/10.1145/3173574.3174209",
+  "github": null,
+  "task": [
+    "Probe HD to LD",
+    "Probe LD to HD"
+  ],
+  "target": [
+    "Point"
+  ],
+  "drRequirements": [
+    "OOS",
+    "Inverse"
+  ],
+  "inputData": [
+    "Numeric"
+  ],
+  "outputFormat": [
+    "LD Geometric",
+    "HD Feature Change"
+  ],
+  "outputComplexity": [
+    "Cutoff"
+  ],
+  "interactive": [
+    "Interactive"
+  ],
+  "layoutEnrichment": [
+    "Direct",
+    "Spatial"
+  ],
+  "evaluationType": [
+    "Quantitative"
+  ],
+  "quantitativeMeasures": [
+    "Fidelity"
+  ],
+  "inputDataCategories": [
+    "Numeric"
+  ],
+  "outputFormatCategories": [
+    "LD Geometric",
+    "HD Feature Change"
+  ],
+  "slug": "forward-and-backward-projection"
+}

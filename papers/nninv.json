@@ -1,0 +1,49 @@
+{
+  "abbreviation": "NNInv",
+  "title": "UnProjection: Leveraging Inverse-Projections for Visual Analytics of High-Dimensional Data",
+  "authors": "Espadoto, Mateus; Appleby, Gabriel; Suh, Ashley; Cashman, Dylan; Li, Mingwei; Scheidegger, Carlos; Anderson, Erik W.; Chang, Remco; Telea, Alexandru C.",
+  "year": 2023,
+  "url": "https://ieeexplore.ieee.org/document/9606529/",
+  "github": null,
+  "task": [
+    "Probe LD to HD"
+  ],
+  "target": [
+    "Point"
+  ],
+  "drRequirements": [
+    "DR-Agnostic"
+  ],
+  "inputData": [
+    "Numeric",
+    "Image"
+  ],
+  "outputFormat": [
+    "LD Geometric",
+    "HD Feature Change"
+  ],
+  "outputComplexity": [
+    "No Scalability Control"
+  ],
+  "interactive": [
+    "Static"
+  ],
+  "layoutEnrichment": [
+    "Spatial"
+  ],
+  "evaluationType": [
+    "Quantitative"
+  ],
+  "quantitativeMeasures": [
+    "Fidelity"
+  ],
+  "inputDataCategories": [
+    "Numeric",
+    "Image"
+  ],
+  "outputFormatCategories": [
+    "LD Geometric",
+    "HD Feature Change"
+  ],
+  "slug": "nninv"
+}

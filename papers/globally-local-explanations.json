@@ -1,0 +1,45 @@
+{
+  "abbreviation": "Globally Local Explanations",
+  "title": "Globally local and fast explanations of t-SNE-like nonlinear embeddings",
+  "authors": "Lambert, Pierre; De Bodt, Cyril; Marion, Rebecca; Albert, Julien; Jean, Emmanuel; Corbugy, Sacha",
+  "year": 2022,
+  "url": "https://ceur-ws.org/Vol-3318/short23.pdf",
+  "github": "https://github.com/PierreLambert3/glocally_explained",
+  "task": [
+    "Characterize"
+  ],
+  "target": [
+    "Cluster"
+  ],
+  "drRequirements": [
+    "DR-Agnostic"
+  ],
+  "inputData": [
+    "Numeric"
+  ],
+  "outputFormat": [
+    "Clustering",
+    "LD Geometric",
+    "FI: Model-Derived (LR)"
+  ],
+  "outputComplexity": [
+    "Sparsity"
+  ],
+  "interactive": [
+    "Interactive"
+  ],
+  "layoutEnrichment": [
+    "Cluster"
+  ],
+  "evaluationType": [],
+  "quantitativeMeasures": [],
+  "inputDataCategories": [
+    "Numeric"
+  ],
+  "outputFormatCategories": [
+    "Clustering",
+    "LD Geometric",
+    "FI: Model-Derived"
+  ],
+  "slug": "globally-local-explanations"
+}

@@ -1,0 +1,10 @@
+data/
+
+# Dev notes, not needed to run or understand the deployed site.
+instructions.md
+CLAUDE.md
+
+.DS_Store
+Thumbs.db
+*.swp
+

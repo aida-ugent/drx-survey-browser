@@ -1,0 +1,49 @@
+{
+  "abbreviation": "BIOT",
+  "title": "BIOT: Explaining multidimensional nonlinear MDS embeddings using the Best Interpretable Orthogonal Transformation",
+  "authors": "Bibal, Adrien; Marion, Rebecca; von Sachs, Rainer; Frénay, Benoît",
+  "year": 2021,
+  "url": "https://doi.org/10.1016/j.neucom.2021.04.088",
+  "github": "https://github.com/rebeccamarion/BIOT",
+  "task": [
+    "Characterize"
+  ],
+  "target": [
+    "Global"
+  ],
+  "drRequirements": [
+    "Rotation Invariant"
+  ],
+  "inputData": [
+    "Numeric"
+  ],
+  "outputFormat": [
+    "FI: Model-Derived (LR)",
+    "LD Geometric"
+  ],
+  "outputComplexity": [
+    "Sparsity"
+  ],
+  "interactive": [
+    "Static"
+  ],
+  "layoutEnrichment": [
+    "None"
+  ],
+  "evaluationType": [
+    "Quantitative",
+    "Informal Feedback"
+  ],
+  "quantitativeMeasures": [
+    "Fidelity",
+    "Complexity"
+  ],
+  "inputDataCategories": [
+    "Numeric"
+  ],
+  "outputFormatCategories": [
+    "FI: Model-Derived",
+    "LD Geometric"
+  ],
+  "slug": "biot"
+}

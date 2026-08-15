@@ -1,0 +1,47 @@
+{
+  "abbreviation": "GCE",
+  "title": "Explaining Groups of Points in Low-Dimensional Representations",
+  "authors": "Plumb, Gregory; Terhorst, Jonathan; Sankararaman, Sriram; Talwalkar, Ameet",
+  "year": 2020,
+  "url": "http://proceedings.mlr.press/v119/plumb20a.html",
+  "github": "https://github.com/GDPlumb/ELDR",
+  "task": [
+    "Probe LD to HD"
+  ],
+  "target": [
+    "Cluster"
+  ],
+  "drRequirements": [
+    "Differentiable"
+  ],
+  "inputData": [
+    "Numeric"
+  ],
+  "outputFormat": [
+    "HD Feature Change"
+  ],
+  "outputComplexity": [
+    "Sparsity"
+  ],
+  "interactive": [
+    "Static"
+  ],
+  "layoutEnrichment": [
+    "None"
+  ],
+  "evaluationType": [
+    "Quantitative"
+  ],
+  "quantitativeMeasures": [
+    "Fidelity",
+    "Complexity",
+    "Robustness"
+  ],
+  "inputDataCategories": [
+    "Numeric"
+  ],
+  "outputFormatCategories": [
+    "HD Feature Change"
+  ],
+  "slug": "gce"
+}

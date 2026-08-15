@@ -1,0 +1,49 @@
+{
+  "abbreviation": "LAPS, VisExPreS",
+  "title": "VisExPreS: A Visual Interactive Toolkit for User-driven Evaluations of Embeddings",
+  "authors": "Ghosh, Aindrila; Nashaat, Mona; Miller, James; Quader, Shaikh",
+  "year": 2022,
+  "url": "https://doi.org/10.1109/TVCG.2020.3039106",
+  "github": null,
+  "task": [
+    "Characterize"
+  ],
+  "target": [
+    "Point"
+  ],
+  "drRequirements": [
+    "DR-Agnostic"
+  ],
+  "inputData": [
+    "Numeric",
+    "Categorical or Mixed"
+  ],
+  "outputFormat": [
+    "FI: Statistics (Correlation)"
+  ],
+  "outputComplexity": [
+    "Cutoff"
+  ],
+  "interactive": [
+    "Interactive"
+  ],
+  "layoutEnrichment": [
+    "None"
+  ],
+  "evaluationType": [
+    "Lab Study"
+  ],
+  "quantitativeMeasures": [
+    "Task Accuracy",
+    "Task Time",
+    "Satisfaction"
+  ],
+  "inputDataCategories": [
+    "Numeric",
+    "Categorical or Mixed"
+  ],
+  "outputFormatCategories": [
+    "FI: Statistics"
+  ],
+  "slug": "laps-visexpres"
+}

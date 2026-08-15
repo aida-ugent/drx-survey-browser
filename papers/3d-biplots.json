@@ -1,0 +1,43 @@
+{
+  "abbreviation": "3D Biplots",
+  "title": "Explaining three-dimensional dimensionality reduction plots",
+  "authors": "Coimbra, Danilo B.; Martins, Rafael M.; Neves, Tácito T.A.T.; Telea, Alexandru C.; Paulovich, Fernando V.",
+  "year": 2016,
+  "url": "https://doi.org/10.1177/1473871615600010",
+  "github": null,
+  "task": [
+    "Characterize"
+  ],
+  "target": [
+    "Global"
+  ],
+  "drRequirements": [
+    "OOS"
+  ],
+  "inputData": [
+    "Numeric"
+  ],
+  "outputFormat": [
+    "FI: Statistics (Variance)",
+    "LD Geometric"
+  ],
+  "outputComplexity": [
+    "No Scalability Control"
+  ],
+  "interactive": [
+    "Interactive"
+  ],
+  "layoutEnrichment": [
+    "Direct"
+  ],
+  "evaluationType": [],
+  "quantitativeMeasures": [],
+  "inputDataCategories": [
+    "Numeric"
+  ],
+  "outputFormatCategories": [
+    "FI: Statistics",
+    "LD Geometric"
+  ],
+  "slug": "3d-biplots"
+}
