@@ -5,22 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>DRX Browser</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css">
 </head>
 <body>
   <div class="app">
     <aside class="sidebar">
-      <div class="sidebar-header">
+      <div class="hero">
         <h1>DRX Browser</h1>
         <p class="subtitle">The State-of-the-Art in Explanation Methods for Two-Dimensional Embeddings</p>
         <p class="authors">Edith Heiter, Fuyin Lai, Cyril de Bodt, Yvan Saeys, Jefrey Lijffijt</p>
       </div>
-
+      <div class="sidebar-body">
       <div class="filter-group">
         <div class="search-row">
           <label for="search">Search</label>
-          <button id="reset" type="button">Reset</button>
+          <button id="reset" type="button"><i class="fa-solid fa-arrow-rotate-left" aria-hidden="true"></i> Reset</button>
         </div>
-        <input type="search" id="search" placeholder="Title or abbreviation…">
+        <div class="search-input-wrap">
+          <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+          <input type="search" id="search" placeholder="Title or abbreviation…">
+        </div>
       </div>
 
       <div class="filter-group">
@@ -48,12 +52,13 @@
       </div>
 
       <div id="category-filters"></div>
+      </div>
     </aside>
 
     <main>
       <div class="results-bar">
-        <span class="results-count"><span id="count">0</span> / <span id="total">0</span> papers</span>
-        <button type="button" id="open-submit-dialog" class="btn-propose">+ Add a method</button>
+        <span class="results-count"><strong id="count">0</strong> of <strong id="total">0</strong> methods</span>
+        <button type="button" id="open-submit-dialog" class="btn-propose"><i class="fa-solid fa-plus" aria-hidden="true"></i> Add a method</button>
         <div class="sort-controls" id="sort-controls">
           <span class="sort-label">Sort by</span>
         </div>
@@ -65,7 +70,7 @@
   <dialog id="submit-dialog" aria-labelledby="submit-dialog-title">
     <div class="submit-dialog-header">
       <h2 id="submit-dialog-title">Propose a method</h2>
-      <button type="button" id="submit-dialog-close" class="dialog-close" aria-label="Close">✕</button>
+      <button type="button" id="submit-dialog-close" class="dialog-close" aria-label="Close"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
     </div>
 
     <form id="submit-form" novalidate>

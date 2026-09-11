@@ -22,23 +22,24 @@ export function filterField(field) {
   return field.filterKey ?? field.key;
 }
 
-export const YEAR_MIN = 2012;
-export const YEAR_MAX = 2025;
+// The year range's bounds are derived from the loaded papers (see
+// yearBoundsFromPapers in main.js), not hardcoded, so a submission with a
+// newer year automatically extends the slider without a code change.
 
-export function createInitialState() {
+export function createInitialState(yearMin, yearMax) {
   const categories = {};
   for (const field of FIELDS) categories[field.key] = new Set();
   return {
     search: "",
-    yearMin: YEAR_MIN,
-    yearMax: YEAR_MAX,
+    yearMin,
+    yearMax,
     codePublicOnly: false,
     categories,
   };
 }
 
-export function resetState(state) {
-  const fresh = createInitialState();
+export function resetState(state, yearMin, yearMax) {
+  const fresh = createInitialState(yearMin, yearMax);
   state.search = fresh.search;
   state.yearMin = fresh.yearMin;
   state.yearMax = fresh.yearMax;

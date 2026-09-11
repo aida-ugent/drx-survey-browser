@@ -1,8 +1,6 @@
 import { loadPapers } from "./data.js";
 import {
   FIELDS,
-  YEAR_MIN,
-  YEAR_MAX,
   createInitialState,
   resetState,
   applyFilters,
@@ -14,7 +12,11 @@ import { renderGallery } from "./render.js";
 import { iconFor } from "./icons.js";
 import { initSubmitForm } from "./submit.js";
 
-const state = createInitialState();
+// Slider bounds are derived from the loaded papers (see init()) rather than
+// hardcoded, so a submission with a newer year extends the range on its own.
+let YEAR_MIN;
+let YEAR_MAX;
+let state;
 let allPapers = [];
 
 const galleryEl = document.getElementById("gallery");
@@ -37,7 +39,7 @@ let sortBy = SORT_OPTIONS[0].key;
 
 function render() {
   const filtered = applyFilters(allPapers, state);
-  renderGallery(galleryEl, sortPapers(filtered, sortBy));
+  renderGallery(galleryEl, sortPapers(filtered, sortBy), state.categories);
   countEl.textContent = filtered.length;
   totalEl.textContent = allPapers.length;
 }
@@ -127,13 +129,27 @@ function yearToPercent(year) {
   return ((year - YEAR_MIN) / (YEAR_MAX - YEAR_MIN)) * 100;
 }
 
+// The visual thumb is 16px wide; positioning it with a plain `left: N%`
+// lets it travel edge-to-edge of the track and overhang the surrounding
+// block by half its width at each end. Inset the travel range by the
+// thumb's own width instead so it stays fully inside the container -- the
+// container's width never has to be known since calc() resolves the `%`
+// term against it directly.
+function thumbEdge(percent) {
+  return `calc((100% - 16px) * ${percent / 100})`;
+}
+
+function thumbCenter(percent) {
+  return `calc((100% - 16px) * ${percent / 100} + 8px)`;
+}
+
 function updateYearVisuals() {
   const minPercent = yearToPercent(state.yearMin);
   const maxPercent = yearToPercent(state.yearMax);
-  yearThumbMinEl.style.left = `${minPercent}%`;
-  yearThumbMaxEl.style.left = `${maxPercent}%`;
-  yearRangeFillEl.style.left = `${minPercent}%`;
-  yearRangeFillEl.style.width = `${maxPercent - minPercent}%`;
+  yearThumbMinEl.style.left = thumbEdge(minPercent);
+  yearThumbMaxEl.style.left = thumbEdge(maxPercent);
+  yearRangeFillEl.style.left = thumbCenter(minPercent);
+  yearRangeFillEl.style.width = `calc((100% - 16px) * ${(maxPercent - minPercent) / 100})`;
 }
 
 function wireYearRange() {
@@ -191,7 +207,7 @@ function wireCodePublic() {
 
 function wireReset() {
   resetEl.addEventListener("click", () => {
-    resetState(state);
+    resetState(state, YEAR_MIN, YEAR_MAX);
     searchEl.value = "";
     yearMinEl.value = YEAR_MIN;
     yearMaxEl.value = YEAR_MAX;
@@ -207,6 +223,10 @@ function wireReset() {
 
 async function init() {
   allPapers = await loadPapers();
+  const years = allPapers.map((p) => p.year);
+  YEAR_MIN = Math.min(...years);
+  YEAR_MAX = Math.max(...years);
+  state = createInitialState(YEAR_MIN, YEAR_MAX);
   buildCategoryFilters();
   buildSortControls();
   wireYearRange();
