@@ -11,6 +11,9 @@
   --chip-active-bg: #4b5158;
   --chip-active-text: #ffffff;
   --shadow: 0 1px 2px rgba(20, 20, 30, 0.06), 0 2px 8px rgba(20, 20, 30, 0.04);
+  --error: #b3261e;
+  --warning-bg: #fdf3e2;
+  --warning-text: #7a5b12;
 }
 
 * {
@@ -68,6 +71,23 @@ body {
   line-height: 1.4;
   margin: 0;
   color: var(--text-muted);
+}
+
+.btn-propose {
+  flex: none;
+  padding: 5px 14px;
+  border: 1px solid var(--accent);
+  background: var(--accent-bg);
+  color: var(--accent);
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-propose:hover {
+  background: var(--accent);
+  color: #fff;
 }
 
 .filter-group {
@@ -416,6 +436,260 @@ main {
   grid-column: 1 / -1;
 }
 
+/* "Propose a method" dialog */
+
+#submit-dialog {
+  border: none;
+  border-radius: 12px;
+  padding: 0;
+  width: 90vw;
+  max-width: 560px;
+  max-height: 85vh;
+  background: var(--card-bg);
+  color: var(--text);
+  box-shadow: var(--shadow);
+}
+
+#submit-dialog::backdrop {
+  background: rgba(20, 20, 30, 0.45);
+}
+
+.submit-dialog-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--border);
+}
+
+.submit-dialog-header h2 {
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.dialog-close {
+  border: none;
+  background: transparent;
+  color: var(--text-muted);
+  font-size: 1rem;
+  line-height: 1;
+  cursor: pointer;
+  padding: 4px 6px;
+  border-radius: 6px;
+}
+
+.dialog-close:hover {
+  color: var(--text);
+  background: var(--bg);
+}
+
+.submit-dialog-body {
+  padding: 16px 20px;
+  overflow-y: auto;
+  max-height: calc(85vh - 130px);
+}
+
+.submit-intro {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin: 0 0 16px;
+}
+
+.submit-fork-hint {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  background: var(--warning-bg);
+  border-radius: 6px;
+  padding: 8px 10px;
+  margin: -6px 0 16px;
+}
+
+.submit-fork-hint a {
+  color: var(--warning-text);
+  font-weight: 600;
+}
+
+.field-row {
+  margin-bottom: 14px;
+}
+
+.field-row label {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--text-muted);
+  margin-bottom: 6px;
+}
+
+.required-mark {
+  color: var(--error);
+}
+
+.field-row input,
+.field-row textarea {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-family: inherit;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.field-row input:focus,
+.field-row textarea:focus {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+
+.field-row input[aria-invalid="true"] {
+  border-color: var(--error);
+}
+
+.field-row-inline {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.field-error {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.78rem;
+  color: var(--error);
+  margin: 6px 0 0;
+}
+
+.field-error::before {
+  content: "⚠";
+}
+
+/* [hidden] is (0,1,0) specificity, same as the .field-error/.field-warning
+   class rules above -- without this, author-origin `display: flex` beats
+   the UA stylesheet's `[hidden] { display: none }` at equal specificity, so
+   the hidden attribute would silently do nothing. */
+.field-error[hidden],
+.field-warning[hidden] {
+  display: none;
+}
+
+.field-warning {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.78rem;
+  color: var(--warning-text);
+  background: var(--warning-bg);
+  border-radius: 6px;
+  padding: 6px 8px;
+  margin: 6px 0 0;
+}
+
+.field-warning::before {
+  content: "ⓘ";
+}
+
+#submit-taxonomy .category-group {
+  margin-bottom: 14px;
+}
+
+.submit-preview {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+}
+
+.submit-preview-note {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin: 0 0 10px;
+}
+
+.submit-preview-note strong {
+  color: var(--text);
+}
+
+.submit-preview-note code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.9em;
+  background: var(--chip-bg);
+  padding: 1px 5px;
+  border-radius: 4px;
+  color: var(--text);
+}
+
+.icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: var(--text-muted);
+  border-radius: 6px;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+.icon-btn:hover {
+  background: var(--accent-bg);
+  color: var(--accent);
+}
+
+#submit-copy-status {
+  display: inline-block;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  margin-left: 6px;
+  vertical-align: middle;
+}
+
+.submit-dialog-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  padding: 14px 20px;
+  border-top: 1px solid var(--border);
+}
+
+.submit-dialog-footer button {
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+#submit-cancel {
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text);
+}
+
+#submit-cancel:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+#submit-btn {
+  border: 1px solid var(--accent);
+  background: var(--accent);
+  color: #fff;
+  font-weight: 600;
+}
+
+#submit-btn:disabled {
+  background: var(--border);
+  border-color: var(--border);
+  color: var(--text-muted);
+  cursor: not-allowed;
+}
+
 @media (max-width: 800px) {
   .app {
     grid-template-columns: 1fr;
@@ -425,5 +699,18 @@ main {
     height: auto;
     border-right: none;
     border-bottom: 1px solid var(--border);
+  }
+  #submit-dialog {
+    width: 100vw;
+    height: 100vh;
+    max-width: none;
+    max-height: none;
+    border-radius: 0;
+  }
+  .submit-dialog-body {
+    max-height: calc(100vh - 130px);
+  }
+  .field-row-inline {
+    grid-template-columns: 1fr;
   }
 }

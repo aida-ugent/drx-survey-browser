@@ -10,6 +10,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 CSV_PATH = ROOT / "website_table.csv"
 PAPERS_DIR = ROOT / "papers"
+SUBMISSIONS_DIR = PAPERS_DIR / "submissions"
 
 LABELS = {
     # Task
@@ -251,11 +252,92 @@ def build_paper(row):
     return paper
 
 
+# Content fields a papers/submissions/*.json file must provide. Derived
+# fields (inputDataCategories, outputFormatCategories, slug) are recomputed
+# below rather than trusted from the file -- see load_submission().
+REQUIRED_SUBMISSION_KEYS = [
+    "abbreviation",
+    "title",
+    "authors",
+    "year",
+    "url",
+    "github",
+    "task",
+    "target",
+    "drRequirements",
+    "inputData",
+    "outputFormat",
+    "outputComplexity",
+    "interactive",
+    "layoutEnrichment",
+    "evaluationType",
+    "quantitativeMeasures",
+]
+
+LIST_SUBMISSION_KEYS = [
+    "task",
+    "target",
+    "drRequirements",
+    "inputData",
+    "outputFormat",
+    "outputComplexity",
+    "interactive",
+    "layoutEnrichment",
+    "evaluationType",
+    "quantitativeMeasures",
+]
+
+
+def load_submission(path):
+    """Load one papers/submissions/*.json file as a paper record.
+
+    website_table.csv is a historical snapshot for the published paper's
+    LaTeX table; it is not touched by this path. papers/submissions/ is the
+    permanent, independent source for everything contributed after
+    publication -- this function only ever *reads* that directory. Derived
+    fields are recomputed here (not trusted from the file) so there is one
+    authoritative implementation of the bucketing/slug rules, not two that
+    could silently drift apart.
+    """
+    with path.open(encoding="utf-8") as f:
+        data = json.load(f)
+
+    missing = [key for key in REQUIRED_SUBMISSION_KEYS if key not in data]
+    if missing:
+        raise ValueError(f"{path}: missing required key(s): {missing}")
+
+    paper = {key: data[key] for key in REQUIRED_SUBMISSION_KEYS}
+
+    if not isinstance(paper["year"], int):
+        raise ValueError(f"{path}: 'year' must be an integer, got {paper['year']!r}")
+    if paper["github"] is not None and not isinstance(paper["github"], str):
+        raise ValueError(f"{path}: 'github' must be a string or null")
+    for key in LIST_SUBMISSION_KEYS:
+        if not isinstance(paper[key], list):
+            raise ValueError(f"{path}: {key!r} must be a list, got {paper[key]!r}")
+
+    paper["inputDataCategories"] = dedupe(
+        input_data_category(v) for v in paper["inputData"]
+    )
+    paper["outputFormatCategories"] = dedupe(
+        output_format_category(v) for v in paper["outputFormat"]
+    )
+    paper["slug"] = slugify(paper["abbreviation"])
+    return paper
+
+
+def load_submissions():
+    if not SUBMISSIONS_DIR.exists():
+        return []
+    return [load_submission(p) for p in sorted(SUBMISSIONS_DIR.glob("*.json"))]
+
+
 def main():
     with CSV_PATH.open(encoding="utf-8", newline="") as f:
         rows = list(csv.DictReader(f))
 
     papers = [build_paper(row) for row in rows]
+    papers.extend(load_submissions())
 
     slugs = [p["slug"] for p in papers]
     duplicates = {s for s in slugs if slugs.count(s) > 1}

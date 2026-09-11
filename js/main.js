@@ -12,6 +12,7 @@ import {
 } from "./filters.js";
 import { renderGallery } from "./render.js";
 import { iconFor } from "./icons.js";
+import { initSubmitForm } from "./submit.js";
 
 const state = createInitialState();
 let allPapers = [];
@@ -212,6 +213,7 @@ async function init() {
   wireSearch();
   wireCodePublic();
   wireReset();
+  initSubmitForm(allPapers);
   render();
 }
 

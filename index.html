@@ -53,6 +53,7 @@
     <main>
       <div class="results-bar">
         <span class="results-count"><span id="count">0</span> / <span id="total">0</span> papers</span>
+        <button type="button" id="open-submit-dialog" class="btn-propose">+ Add a method</button>
         <div class="sort-controls" id="sort-controls">
           <span class="sort-label">Sort by</span>
         </div>
@@ -60,6 +61,78 @@
       <div class="gallery" id="gallery"></div>
     </main>
   </div>
+
+  <dialog id="submit-dialog" aria-labelledby="submit-dialog-title">
+    <div class="submit-dialog-header">
+      <h2 id="submit-dialog-title">Propose a method</h2>
+      <button type="button" id="submit-dialog-close" class="dialog-close" aria-label="Close">✕</button>
+    </div>
+
+    <form id="submit-form" novalidate>
+      <div class="submit-dialog-body">
+        <p class="submit-intro">Know a DR explanation method that isn't in the survey yet? Fill in what you can below — "Add to GitHub" opens a pre-filled new file on GitHub for you to commit and open as a pull request. We'll review it from there.</p>
+        <p class="submit-fork-hint">First time contributing? <a href="https://github.com/aida-ugent/drx-survey-browser/fork" target="_blank" rel="noopener">Fork the repository</a> once before using the button below.</p>
+
+        <div class="field-row">
+          <label for="field-abbreviation">Abbreviation <span class="required-mark">*</span></label>
+          <input type="text" id="field-abbreviation" aria-describedby="error-abbreviation abbr-dup-warning" aria-invalid="false">
+          <p class="field-error" id="error-abbreviation" role="alert" hidden></p>
+          <p class="field-warning" id="abbr-dup-warning" hidden></p>
+        </div>
+
+        <div class="field-row">
+          <label for="field-title">Manuscript Title <span class="required-mark">*</span></label>
+          <input type="text" id="field-title" aria-describedby="error-title" aria-invalid="false">
+          <p class="field-error" id="error-title" role="alert" hidden></p>
+        </div>
+
+        <div class="field-row">
+          <label for="field-authors">Authors <span class="required-mark">*</span></label>
+          <input type="text" id="field-authors" placeholder="Last, First; Last, First" aria-describedby="error-authors" aria-invalid="false">
+          <p class="field-error" id="error-authors" role="alert" hidden></p>
+        </div>
+
+        <div class="field-row field-row-inline">
+          <div>
+            <label for="field-year">Year <span class="required-mark">*</span></label>
+            <input type="number" id="field-year" aria-describedby="error-year" aria-invalid="false">
+            <p class="field-error" id="error-year" role="alert" hidden></p>
+          </div>
+          <div>
+            <label for="field-url">Manuscript URL <span class="required-mark">*</span></label>
+            <input type="url" id="field-url" placeholder="https://…" aria-describedby="error-url" aria-invalid="false">
+            <p class="field-error" id="error-url" role="alert" hidden></p>
+          </div>
+        </div>
+
+        <div class="field-row">
+          <label for="field-github">GitHub</label>
+          <input type="url" id="field-github" placeholder="https://github.com/…" aria-describedby="error-github" aria-invalid="false">
+          <p class="field-error" id="error-github" role="alert" hidden></p>
+        </div>
+
+        <div id="submit-taxonomy"></div>
+
+        <div class="submit-preview">
+          <p class="submit-preview-note">
+            Prefer to add the file yourself? Copy the submission as JSON and add it as a new file under <code>papers/submissions/</code> in a pull request:
+            <button type="button" id="submit-copy-btn" class="icon-btn" aria-label="Copy submission JSON to clipboard" title="Copy submission JSON to clipboard">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="9" y="9" width="13" height="13" rx="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+            </button>
+            <span id="submit-copy-status" role="status"></span>
+          </p>
+        </div>
+      </div>
+
+      <div class="submit-dialog-footer">
+        <button type="button" id="submit-cancel">Cancel</button>
+        <button type="submit" id="submit-btn" disabled>Add to GitHub</button>
+      </div>
+    </form>
+  </dialog>
 
   <script type="module" src="js/main.js"></script>
 </body>

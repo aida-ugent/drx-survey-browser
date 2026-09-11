@@ -1,4 +1,4 @@
-# DRX Browser
+# [DRX Browser](https://aida-ugent.github.io/drx-survey-browser/)
 
 **The State-of-the-Art in Explanation Methods for Two-Dimensional Embeddings**
 
