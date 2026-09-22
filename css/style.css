@@ -519,6 +519,12 @@ main {
   border-top: 1px solid var(--grey-10);
 }
 
+.card-links {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
 .card-github {
   position: relative;
   z-index: 2;

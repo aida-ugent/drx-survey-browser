@@ -25,13 +25,15 @@
     "No Scalability Control"
   ],
   "interactive": [
-    "Static"
+    "Interactive"
   ],
   "layoutEnrichment": [
     "Spatial",
     "Direct"
   ],
-  "evaluationType": [],
+  "evaluationType": [
+    "Informal Feedback"
+  ],
   "quantitativeMeasures": [],
   "inputDataCategories": [
     "Numeric"
@@ -40,5 +42,9 @@
     "LD Geometric",
     "FI: Model-Derived"
   ],
-  "slug": "t-sne-gradients"
+  "slug": "t-sne-gradients",
+  "secondaryLink": {
+    "url": "https://github.com/sady410/tsne_interactive_explanation",
+    "label": "Insight-SNE tool"
+  }
 }

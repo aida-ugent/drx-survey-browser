@@ -139,6 +139,17 @@ FIELD_KEYS = {
 
 GITHUB_RE = re.compile(r"\\github\{([^}]*)\}")
 
+# One-off: the CSV's GitHub column models a single repo per paper. This
+# paper additionally has a separate repo for an interactive companion tool,
+# which isn't expected to recur for other papers -- handled as a slug
+# override rather than a general second-link column.
+EXTRA_LINKS = {
+    "t-sne-gradients": {
+        "url": "https://github.com/sady410/tsne_interactive_explanation",
+        "label": "Insight-SNE tool",
+    },
+}
+
 
 def paren_aware_split(s):
     """Split on ',' at paren-depth 0. Handles plain comma lists too (no parens)."""
@@ -249,6 +260,8 @@ def build_paper(row):
     )
 
     paper["slug"] = slugify(paper["abbreviation"])
+    if paper["slug"] in EXTRA_LINKS:
+        paper["secondaryLink"] = EXTRA_LINKS[paper["slug"]]
     return paper
 
 

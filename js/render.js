@@ -93,6 +93,9 @@ function buildCard(paper, activeCategories) {
   const year = document.createElement("span");
   year.textContent = paper.year;
   footer.appendChild(year);
+
+  const links = document.createElement("div");
+  links.className = "card-links";
   if (paper.github) {
     const gh = document.createElement("a");
     gh.className = "card-github";
@@ -104,8 +107,22 @@ function buildCard(paper, activeCategories) {
     icon.setAttribute("aria-hidden", "true");
     gh.appendChild(icon);
     gh.appendChild(document.createTextNode("GitHub"));
-    footer.appendChild(gh);
+    links.appendChild(gh);
   }
+  if (paper.secondaryLink) {
+    const extra = document.createElement("a");
+    extra.className = "card-github";
+    extra.href = paper.secondaryLink.url;
+    extra.target = "_blank";
+    extra.rel = "noopener";
+    const icon = document.createElement("i");
+    icon.className = "fa-solid fa-arrow-up-right-from-square";
+    icon.setAttribute("aria-hidden", "true");
+    extra.appendChild(icon);
+    extra.appendChild(document.createTextNode(paper.secondaryLink.label));
+    links.appendChild(extra);
+  }
+  if (links.childElementCount > 0) footer.appendChild(links);
   card.appendChild(footer);
 
   return card;
